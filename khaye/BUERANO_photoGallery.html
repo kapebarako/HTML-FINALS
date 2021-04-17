@@ -1,0 +1,366 @@
+<!DOCTYPE HTML>
+<html  lang="en">
+<head>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Euphoria+
+Script&family=Poppins&display=swap" rel="stylesheet">
+    <meta charset="utf-8" >
+    <title>Photo Gallery</title>
+    <style type="text/css">
+		a{
+		}
+		a.header {
+			line-height:10px;
+			text-decoration:none;
+			font-family: Poppins;
+			font-size: 19px;
+			text-transform: uppercase;
+			color: white;
+			letter-spacing: 3px;
+			word-spacing:3px;
+		}
+		a.header:hover{
+			color: #65003d;
+		}
+		a.life{
+			font-family: Georgia;
+			color: #7368b5;
+			font-size: 36px;
+			text-shadow: 3px 3px 5px #BEBEBE;
+			text-decoration: none;
+			line-height:55px;
+			
+		}
+		a.life:hover{
+			color: #C55D8B;
+		}
+		.button {
+			text-decoration:none;
+			float: right;
+			margin-right: 200px;
+			box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 
+			0 6px 20px 0 rgba(0,0,0,0.19);
+			padding:10px;
+			background-color: white;
+			border:2px solid #C55D8B;
+			border-radius: 20px;
+			color: #C55D8B;
+			font-size: 18px;
+			font-weight: bold;
+		}
+	
+		.button:hover{
+			transition-duration: 0.4s;
+			background-color: #C55D8B; 
+			color: white;
+		}
+		body{
+			background-color:white;
+			font-family: Verdana;
+			color:#581845 ;
+		}
+	
+		header{
+			padding:10px;
+			background-color:#C55D8B;
+			line-height:10px; 
+		}
+		
+		h1{
+			text-align: center;
+			font-family:Euphoria Script; 
+			font-size:55px;
+			color: white;
+			word-spacing:2px;
+			line-height:16px;
+			font-weight: normal;
+		}
+		h2{
+			font-family: Georgia;
+			font-size: 36px;
+			background-color:#886eba;
+			color: white;
+			word-spacing:2px;
+		}
+		
+		h3{
+			font-family: Georgia;
+			
+		
+		}
+		p{
+			font-family: Verdana;
+			text-align: justify;
+			font-size: 17px;
+			text-indent: 60px;
+			line-height: 25px;
+			letter-spacing: 1px;
+			word-spacing:2px;
+		}
+		
+		
+		img.banner{
+			width: 1247px;
+		}
+		img.right{ 
+			width:200px;
+			float: right;
+			margin: 5px 30px 10px 20px;
+			padding: 5px;
+			border: 5px inset #FDD9E9;
+			border-radius:30px;
+		}
+		img.left{
+			width:200px;
+			float: left;
+			margin: 5px 20px 10px 1px;
+			padding: 5px;
+			border: 5px inset #B6B4F7;
+			border-radius:30px;
+			
+		}
+		img.icon{
+			width:150px;
+			height:150px;
+			margin:20px;
+			border-radius:100px;
+			border: 5px double #e17f93;
+		}
+		img.icon:hover{
+			box-shadow: 0 0 15px -2px #ff1d8e;
+		}
+		img.selfie{
+			height: 350px;
+			margin: 3px 4px;
+			<!--border: 5px double #7368b5; -->
+		}
+		img.fam{
+			height: 350px;
+			margin: 2px 3px;
+		}
+		img.friends{
+			height: 360px;
+			margin: 2px 3px;
+		}
+		img.album{
+			height: 380px;
+		}
+		img.film{
+			height: 500px;
+		}
+		
+		
+    </style>
+</head>
+<body id="top">
+
+    <!--BUERANO, KHAYE-->
+    <!--03.09.21-->
+
+	<header>
+	<blockquote><h1>Khaye's Corner </h1><br><br>
+		<a href="index.html" title="Home" class="header">Home&nbsp;&nbsp;&nbsp;</a>
+		<a href="BUERANO_BIO.HTML" title="About Me" class="header">About Me&nbsp;&nbsp;&nbsp;</a>
+		<a href="BUERANO_RESUME.HTML" title="Resume" class="header">Resume&nbsp;&nbsp;&nbsp;</a>
+		<a href="BUERANO_insertMedia.html" title="My Beat" class="header">Music&nbsp;&nbsp;&nbsp;</a>
+		<a href="BUERANO_Film.html" title="My Kind of Films" class="header">Films&nbsp;&nbsp;&nbsp;</a>
+		<a href="BUERANO_photoGallery.html" title="Photo Gallery" class="header">Photo Gallery&nbsp;&nbsp;&nbsp;</a>
+		<a href="BUERANO_travel.html" title="My Dream Destinations" class="header">Dream Destinations&nbsp;&nbsp;&nbsp;</a>
+	</header>
+	
+	<img src="galleryBanner.jpg" alt="This is an image of the webpages's banner."
+	title="Webpage's Banner" class="banner"/>
+	<br><br>
+	
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="#selfie"><img src="IMAGES/selfieIcon.jpg" alt="An icon of selfie category." title=
+	"An icon of selfie category." class="icon"/></a>
+	<a href="#family"><img src="IMAGES/familyIcon.jpg" alt="An icon of family category." title=
+	"An icon of family category." class="icon"/></a>
+	<a href="#friends"><img src="IMAGES/friendsIcon.jpg" alt="An icon of friends category." title=
+	"An icon of friends category." class="icon"/></a>
+	<a href="#album"><img src="IMAGES/musicIcon.jpg" alt="An icon of music album category." title=
+	"An icon of music album category." class="icon"/></a>
+	<a href="#film"><img src="IMAGES/filmIcon.jpg" alt="An icon of film category." title=
+	"An icon of film category." class="icon"/></a>
+	
+	
+	<br><br><br><br><br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br><br><br><br><br>
+	
+	<blockquote><h2 id="selfie">Selfies</h2></blockquote>
+		<blockquote>
+		<img src="IMAGES/self1.jpg" alt="An image of a girl wearing rust knitted
+		cardigan." title="An image of a girl wearing rust knitted
+		cardigan." class="selfie"/>
+		<img src="IMAGES/self2.jpg" alt="An image of a girl wearing white floral top."
+		title="An image of a girl wearing white floral top." class="selfie"/>
+		<img src="IMAGES/self3.jpg" alt="An image of a girl wearing rust knitted
+		cardigan." title="An image of a girl wearing rust knitted
+		cardigan." class="selfie"/>
+		<img src="IMAGES/self4.jpg" alt="An image of a girl wearing white floral top."
+		title="An image of a girl wearing white floral top." class="selfie"/>
+		<img src="IMAGES/self5.jpg" alt="An image of a girl wearing glasses."
+		title="An image of a girl wearing glasses." class="selfie"/>
+		<img src="IMAGES/self6.jpg" alt="An image of a girl wearing glasses and nstp shirt."
+		title="An image of a girl wearing glasses and nstp shirt." class="selfie"/>
+		<img src="IMAGES/self7.jpg" alt="An image of a girl wearing glasses and black top."
+		title="An image of a girl wearing glasses and black top." class="selfie"/>
+		</blockquote><br><br><br><br>
+		
+		<a href="#top" class="button">Go to Top</a>
+	
+		<br><br><br><br><br><br><br><br><br><br><br><br>
+		<br><br><br><br><br><br><br><br><br><br><br><br>
+		<br><br><br><br><br><br><br><br><br><br><br><br>
+		<br><br><br><br><br><br><br><br><br><br><br><br>
+	
+	<blockquote><h2 id="family">Family</h2></blockquote>
+		<blockquote>
+		<img src="IMAGES/fam1.jpg" alt="An image of a girl wearing rust knitted
+		cardigan." title="An image of a girl wearing rust knitted
+		cardigan." class="fam"/>
+		<img src="IMAGES/fam2.jpg" alt="An image of a girl wearing rust knitted
+		cardigan." title="An image of a girl wearing rust knitted
+		cardigan." class="fam"/>
+		<img src="IMAGES/fam3.jpg" alt="An image of a girl wearing rust knitted
+		cardigan." title="An image of a girl wearing rust knitted
+		cardigan." class="fam"/>
+		<img src="IMAGES/fam4.jpg" alt="An image of a girl wearing rust knitted
+		cardigan." title="An image of a girl wearing rust knitted
+		cardigan." class="fam"/>
+		<img src="IMAGES/fam5.jpg" alt="An image of a girl wearing rust knitted
+		cardigan." title="An image of a girl wearing rust knitted
+		cardigan." class="fam"/>
+		<img src="IMAGES/fam6.jpg" alt="An image of a girl wearing rust knitted
+		cardigan." title="An image of a girl wearing rust knitted
+		cardigan." class="fam"/>
+		<img src="IMAGES/fam7.jpg" alt="An image of a girl wearing rust knitted
+		cardigan." title="An image of a girl wearing rust knitted
+		cardigan." class="fam"/></blockquote>
+		
+		
+		<a href="#top" class="button">Go to Top</a>
+		
+		<br><br><br><br><br><br><br><br><br><br><br><br>
+		<br><br><br><br><br><br><br><br><br><br><br><br>
+		<br><br><br><br><br><br><br><br><br><br><br><br>
+		<br><br><br><br><br><br><br><br><br><br><br><br>
+		
+	<blockquote><h2 id="friends">Friends</h2></blockquote>
+		<blockquote>
+		<img src="IMAGES/fr1.jpg" alt="An image of a girl wearing rust knitted
+		cardigan." title="An image of a girl wearing rust knitted
+		cardigan." class="friends"/>
+		<img src="IMAGES/fr2.jpg" alt="An image of a girl wearing rust knitted
+		cardigan." title="An image of a girl wearing rust knitted
+		cardigan." class="friends"/>
+		<img src="IMAGES/fr3.jpg" alt="An image of a girl wearing rust knitted
+		cardigan." title="An image of a girl wearing rust knitted
+		cardigan." class="friends"/>
+		<img src="IMAGES/fr4.jpg" alt="An image of a girl wearing rust knitted
+		cardigan." title="An image of a girl wearing rust knitted
+		cardigan." class="friends"/>
+		<img src="IMAGES/fr5.jpg" alt="An image of a girl wearing rust knitted
+		cardigan." title="An image of a girl wearing rust knitted
+		cardigan." class="friends"/>
+		<img src="IMAGES/fr6.jpg" alt="An image of a girl wearing rust knitted
+		cardigan." title="An image of a girl wearing rust knitted
+		cardigan." class="friends"/>
+		<img src="IMAGES/fr7.jpg" alt="An image of a girl wearing rust knitted
+		cardigan." title="An image of a girl wearing rust knitted
+		cardigan." class="friends"/>
+		</blockquote>
+		
+		<a href="#top" class="button">Go to Top</a>
+		
+		<br><br><br><br><br><br><br><br><br><br><br><br>
+		<br><br><br><br><br><br><br><br><br><br><br><br>
+		<br><br><br><br><br><br><br><br><br><br><br><br>
+		<br><br><br><br><br><br><br><br><br><br><br><br>
+		
+	<blockquote><h2 id="album">Posters of Album</h2></blockquote>
+		<blockquote>
+		
+		<img src="IMAGES/lauv.jpg" alt="An image of a girl wearing rust knitted
+		cardigan." title="An image of a girl wearing rust knitted
+		cardigan." class="album"/>
+		<img src="IMAGES/yourlove.jpg" alt="An image of a girl wearing rust knitted
+		cardigan." title="An image of a girl wearing rust knitted
+		cardigan." class="album"/>
+		<img src="IMAGES/mtl.jpg" alt="An image of a girl wearing rust knitted
+		cardigan." title="An image of a girl wearing rust knitted
+		cardigan." class="album"/>
+		<img src="IMAGES/shallow.jpg" alt="An image of a girl wearing rust knitted
+		cardigan." title="An image of a girl wearing rust knitted
+		cardigan." class="album"/>
+		<img src="IMAGES/memories.jpg" alt="An image of a girl wearing rust knitted
+		cardigan." title="An image of a girl wearing rust knitted
+		cardigan." class="album"/>
+		<img src="IMAGES/10000.jpg" alt="An image of a girl wearing rust knitted
+		cardigan." title="An image of a girl wearing rust knitted
+		cardigan." class="album"/>
+		<img src="IMAGES/bett.jpg" alt="An image of a girl wearing rust knitted
+		cardigan." title="An image of a girl wearing rust knitted
+		cardigan." class="album"/>
+		
+		</blockquote>
+		
+		<a href="#top" class="button">Go to Top</a>
+		
+		<br><br><br><br><br><br><br><br><br><br><br><br>
+		<br><br><br><br><br><br><br><br><br><br><br><br>
+		<br><br><br><br><br><br><br><br><br><br><br><br>
+		<br><br><br><br><br><br><br><br><br><br><br><br>
+	
+	
+	<blockquote><h2 id="film">My Kind of Film</h2></blockquote>
+		<blockquote>
+		<img src="IMAGES/got.jpg" alt="An image of a girl wearing rust knitted
+		cardigan." title="An image of a girl wearing rust knitted
+		cardigan." class="film"/>
+		<img src="IMAGES/queen.jpg" alt="An image of a girl wearing rust knitted
+		cardigan." title="An image of a girl wearing rust knitted
+		cardigan." class="film"/>
+		<img src="IMAGES/merlin.jpg" alt="An image of a girl wearing rust knitted
+		cardigan." title="An image of a girl wearing rust knitted
+		cardigan." class="film"/>
+		<img src="IMAGES/kimi.jpg" alt="An image of a girl wearing rust knitted
+		cardigan." title="An image of a girl wearing rust knitted
+		cardigan." class="film"/>
+		<img src="IMAGES/hachi.jpg" alt="An image of a girl wearing rust knitted
+		cardigan." title="An image of a girl wearing rust knitted
+		cardigan." class="film"/>
+		<img src="IMAGES/miracle.jpg" alt="An image of a girl wearing rust knitted
+		cardigan." title="An image of a girl wearing rust knitted
+		cardigan." class="film"/>
+		<img src="IMAGES/vow.jpg" alt="An image of a girl wearing rust knitted
+		cardigan." title="An image of a girl wearing rust knitted
+		cardigan." class="film"/>
+		<img src="IMAGES/along.jpg" alt="An image of a girl wearing rust knitted
+		cardigan." title="An image of a girl wearing rust knitted
+		cardigan." class="film"/></blockquote>
+		
+		<a href="#top" class="button">Go to Top</a>
+		
+		<br><br><br><br><br><br><br><br><br><br><br><br>
+		<br><br><br><br><br><br><br><br><br><br><br><br>
+		<br><br><br><br><br><br><br><br><br><br><br><br>
+		<br><br><br><br><br><br><br><br><br><br><br><br>
+		
+	
+	<blockquote><address>
+	Written by: Khaye R. Buerano<br>
+	Reach me out at: <a href="mailto:buerano.khaye@ue.edu.ph">
+	buerano.khaye@ue.edu.ph</a><br>
+	<abbr title="Philippines">PHL</abbr>
+	</address></blockquote>
+	
+</body>
+</html>
+
+
+
