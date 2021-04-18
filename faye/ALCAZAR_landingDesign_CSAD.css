@@ -1,0 +1,79 @@
+body{
+    background-image: url('pictures/homebg.jpg');
+    background-attachment: fixed;
+    background-color: rgba(94, 86, 94, 0.6);
+    background-blend-mode: overlay;
+    color:#383458;
+    font-size: 1.15em; 
+    line-height: 2.1em; 
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h2{
+font-family: 'Press Start 2P';
+text-align: center;
+text-shadow: 2px 3px #ff7575;
+}
+
+h3{
+  font-family: 'Press Start 2P';
+  color: #df5c78;
+  background-color: #372c47;
+  text-shadow: 2px 2px #e6b54d;
+  text-indent: 15px;
+}
+
+h4{
+  font-family: 'Press Start 2P';
+  text-shadow: 2px 3px #fc7070;
+}
+
+p{
+  line-height: 1.5;
+}
+
+.opacity{
+  background-color: rgba(250, 175, 157, 0.7);
+}
+
+div{
+  text-align: center;
+  width: 75%;
+  margin:auto;
+}
+
+hr.dots{
+  border: 5px dotted #ffba61;  
+  width: 75%;
+}
+hr.line{
+  border: 2px solid #cc4158;
+  width: 65%;
+}
+
+a{
+  font-family: 'Press Start 2P';
+  color: #f3c4bc;
+  background-color: #cc4158;
+  text-decoration: none;
+  padding: 1em 1.5em;
+  cursor: default;
+}
+
+a:hover, a:focus{
+  background-color: #e77272;
+  color: #581d31;
+}
+
+a:active{
+  background-color:#383458;
+  color: #e77272;
+}
+
+.cite{
+  font-family: 'Press Start 2P';
+  font-size: x-small;
+  background-color: rgb(250, 187, 168, 0.8);
+  width:50%;
+  text-align: center;
+  margin:auto;
+}

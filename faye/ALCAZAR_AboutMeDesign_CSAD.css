@@ -1,0 +1,124 @@
+body{
+    background-image: url('pictures/aboutmebg.png');
+    background-attachment: fixed;
+    background-color: rgba(165, 160, 131, 0.6);
+    background-blend-mode: overlay;
+    color:#24213f;
+    font-size: 1.15em; 
+    line-height: 2.1em; 
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+div.center{
+    text-align: center; 
+    width: 75%; 
+    margin: auto;
+}
+
+div.justify{
+    text-align: justify; 
+    width: 75%; 
+    margin: auto;
+}
+
+div.list{
+    position: relative;
+    width:40%;
+    margin:auto;
+}
+
+p{
+    line-height: 1.5;
+    text-indent: 100px;
+}
+
+h2{
+    font-family: 'Press Start 2P';
+    text-align: center;
+    text-shadow: 2px 3px #e77272;
+}
+
+h3{
+    font-family: 'Press Start 2P';
+    text-align: center;
+    color: #df5c78;
+    background-color: #4d3255;
+    text-shadow: 2px 2px #e6b54d; 
+}
+
+.quote{
+    font-family: 'Press Start 2P';
+    font-size: small;
+    color: #452f6e;
+    background-color: rgba(255, 233, 191, 0.5);
+    width: 60%;
+    text-align: center;
+    margin:auto;
+}
+
+abbr{
+    text-decoration: none;
+    font-weight: bold;
+    font-style: oblique;
+}
+
+sup{
+    color:#8f4f8f;
+    font-weight: bold;
+}
+
+hr.dots{
+    border: 5px dotted #c95252;  
+    width: 85%;
+}
+
+hr.line{
+    border: 5px solid #f8a764;
+    width: 45%; 
+}
+
+a.link{
+    color: #803e80;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    display:block;
+}
+ul{
+    list-style: square inside;
+    background: #f58282;
+    padding: 10px;
+    text-indent: 25px;
+    font-family: 'Press Start 2P';
+    font-size: larger;
+    color: #f76584;
+    background: #55314f;
+    text-indent: 15px;
+}
+ul li{
+    background: #e9b2a2;
+    margin: 5px;
+}
+
+li>a{
+    font-family:'Trebuchet MS', Arial, sans-serif;
+    color:#3d2766;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+img {
+    opacity: 0.8;
+}
+img:hover {
+    opacity: 1.0;
+}
+
+.cite{
+    font-family: 'Press Start 2P';
+    font-size: x-small;
+    background-color: rgba(218, 178, 204, 0.8);
+    width:50%;
+    text-align: center;
+    margin:auto;
+}

@@ -1,0 +1,105 @@
+body{
+    background-image: url('pictures/resumebg.png');
+    background-attachment: fixed;
+    background-color: rgba(97, 84, 97, 0.6);
+    background-blend-mode: overlay;
+    color:#383458;
+    font-size: 1.15em; 
+    line-height: 2.1em; 
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+p{
+    line-height: 1.5;
+    text-indent: 60px;
+    text-align: justify;
+    width:75%;
+    margin:auto;
+}
+
+h2{
+    font-family: 'Press Start 2P';
+    text-align: center;
+    text-shadow: 2px 3px #e77272;
+}
+
+h3{
+    font-family: 'Press Start 2P';
+    color: #df5c78;
+    background-color: #352f50;
+    text-shadow: 2px 2px #e6b54d;
+    text-indent: 15px;
+}
+
+h4{
+    font-family: 'Press Start 2P';
+    text-shadow: 2px 3px #e77272;
+}
+
+ul{
+    list-style: square inside;
+    background: #f58282;
+    padding: 10px;
+    text-indent: 25px;
+}
+
+ol{
+    list-style: none inside;
+    padding:10px;
+}
+ul li{
+    background: #ffab9c;
+    margin: 5px;
+}
+
+ol>li{
+    font-family: 'Press Start 2P';
+    font-size: larger;
+    color: #df5c78;
+    background: #352f50;
+    text-shadow: 2px 2px #e6b54d;
+    text-indent: 15px;
+}
+
+div{
+    position: relative;
+    width:75%;
+    margin:auto;
+}
+
+abbr{
+    text-decoration: none;
+    font-weight: bold;
+    font-style: oblique;
+}
+
+hr.dots{
+    border: 5px dotted #f75c5c;  
+    width: 85%;
+}
+
+hr.line{
+    border: 2px solid #fa9c4f;
+    width: 80%;
+}
+
+.left{
+    float: left
+}
+
+img{
+    border-radius: 30px;
+    padding: 15px;
+}
+
+.opacity{
+    background-color: rgb(250, 187, 168, 0.8);
+}
+
+.cite{
+    font-family: 'Press Start 2P';
+    font-size: x-small;
+    background-color: rgb(250, 187, 168, 0.8);
+    width:50%;
+    text-align: center;
+}

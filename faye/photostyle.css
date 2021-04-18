@@ -1,0 +1,141 @@
+body{
+    background-image: url('pictures/mediabg.gif');
+    background-attachment: fixed;
+    background-color: rgba(211, 199, 172, 0.6);
+    background-blend-mode: overlay;
+    color:#291b3b;
+    font-size: 1.15em; 
+    line-height: 2.1em; 
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h2{
+  font-family: 'Press Start 2P';
+  text-align: center;
+  text-shadow: 2px 3px #f86565;
+}
+
+h3{
+  font-family: 'Press Start 2P';
+  color: #ce4865;
+  background-color: #2f2142;
+  text-shadow: 2px 2px #dab25d;
+  text-indent: 15px;
+}
+
+h4{
+  font-family: 'Press Start 2P';
+  text-shadow: 2px 3px #fc7070;
+}
+
+p{
+  line-height: 1.5;
+}
+
+div.center{
+  text-align: center;
+  width: 80%;
+  margin:auto;
+}
+div.list{
+  width: 40%;
+  margin:auto;
+}
+div.polaroid {
+  width: 25%;
+  background-color: rgba(245, 237, 219, 0.836);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin:auto;
+  padding: 10px;
+  margin: 10px;
+  display: block;
+  float:left;
+}
+img{
+  width: 100%;
+  transition: transform .2s;
+}
+img:hover{
+  transform: scale(1.5);
+}
+div.container {
+  text-align: center;
+  padding: 10px 10px;
+}
+.clearfix{
+  background-color: rgba(255, 174, 154, 0.5);
+  margin:auto;
+  position: relative;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+  width:80%;
+}
+hr.dots{
+  border: 5px dotted #f77474;  
+  width: 75%;
+}
+hr.line{
+  border: 2px solid #ffa163;
+  width: 65%;
+}
+hr.long{
+  border: 5px dotted #c95252;
+}
+
+ul{
+    list-style: square inside;
+    background: #f58282;
+    padding: 10px;
+    text-indent: 25px;
+    font-family: 'Press Start 2P';
+    font-size: larger;
+    color: #f76584;
+    background: #292141;
+    text-indent: 15px;
+}
+ul li{
+    background: #e9b2a2;
+    margin: 5px;
+}
+
+li>a{
+    font-family:'Trebuchet MS', Arial, sans-serif;
+    color:#3f2153;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a.link{
+    font-family:'Press Start 2P';
+    color: #f3c4bc;
+    background-color: #cc4158;
+    text-decoration: none;
+    font-size: small;
+    padding: 1em 1.5em;
+    cursor: default;
+    float:right;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+  }
+  
+  a.link:hover, a.link:focus{
+    background-color: #e77272;
+    color: #581d31;
+  }
+  
+  a.link:active{
+    background-color:#383458;
+    color: #e77272;
+  }
+
+  .cite{
+    font-family: 'Press Start 2P';
+    font-size: x-small;
+    background-color: rgb(250, 187, 168, 0.8);
+    width:50%;
+    text-align: center;
+    margin:auto;
+  }

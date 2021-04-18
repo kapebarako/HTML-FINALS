@@ -1,0 +1,57 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <base target="newPlaces">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Image Mapping</title>
+    <script language="JavaScript">
+        function writeText(txt){
+            document.getElementById("desc").innerHTML=txt;
+        }
+
+        function dissolveText(txt){
+            document.getElementById("desc").innerHTML=txt;
+        }
+    </script>
+    <style type= "text/css">
+
+    </style>
+</head>
+<body>
+    <link rel="stylesheet" type="text/css" href="imageMapping.css">	
+    <!--ALCAZAR, FAYE THERESE SIMONE-->
+    <!--DATE-->
+    <h2>>Dream Travels</h2>
+    <hr class="line">
+    <div>
+    <h3>Places to Go</h3>
+      <img src="pictures/collage.png" usemap="#collage">
+      <map name="collage">
+        <area target="newPlaces" href="verona.html" shape="rect" coords="87,332,417,599"  
+        onMouseOver="writeText('> Juliet\'s Balcony from Verona, Italy');" onMouseOut="dissolveText('~***~')"/>
+        <area target="newPlaces" href="shibuya.html" shape="rect" coords="86,3,357,329" 
+        onMouseOver="writeText('> The busiest street in the world, Shibuya Crossing');" onMouseOut="dissolveText('~***~')"/>
+        <area target="newPlaces" href="antique.html" shape="circle" coords="500,152,141" 
+        onMouseOver="writeText('> The famous Kawa Hot Bath in Tibiao, Antique');" onMouseOut="dissolveText('~***~')"/>
+        <area target="newPlaces" href="finland.html" shape="circle" coords="714,278,101" 
+        onMouseOver="writeText('> Enchanting glass igloos of Kakslautten, Finland');" onMouseOut="dissolveText('~***~')"/>
+        <area target="newPlaces" href="athens.html" shape="poly" coords="482,598,417,586,421,391,457,393,
+            464,378,469,374,510,385,522,402,535,403,540,386,641,383,695,407,706,407,719,419,
+            731,417,734,425,745,422,751,432,764,433,774,443,784,438,798,443,799,464,807,468,805,
+            486,821,491,824,599" 
+            onMouseOver="writeText('> Old pillars of history from Athens');" onMouseOut="dissolveText('~***~')"/>
+        </map>
+        <div class="opacity">
+        <p id="desc">~***~</p>
+        </div>
+        <a target="newPlaces" href="ALCAZAR_LANDINGPAGE_CSAD.html">Back to Home</a>
+    </div>
+    <hr class="line">
+    <hr class="dots">
+    <br>
+    <div class="cite">
+        background art by: Amanda 'Merrigo', 2015
+    </div>
+</body>
+</html>
