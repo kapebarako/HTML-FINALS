@@ -1,0 +1,177 @@
+<!DOCTYPE html> 
+<html lang="en">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Montserrat&family=Roboto:wght@300&display=swap" rel="stylesheet">
+<head>
+    <meta charset="utf-8">
+    <title>About</title>
+    <style type="text/css">
+	p{
+		margin:40px;
+		text-align:center;
+	}
+	h3{
+		font-size:30px;
+		font-weight: bold;
+		color:#358FD8;
+		margin-left:40px;
+		text-align:center;
+	}
+	.yline{
+		border: 1px solid #f7cc10;
+		width:65%;
+	}
+	.parent{
+		display:inline-flex;
+	}
+	.child{
+		margin-left:30px;
+		width:50px;
+		height:50px;
+		border:1px solid black;
+	}
+	.name{
+		color:#ffb700;
+		font-size:20px;
+		display:inline;
+		text-decoration:none;
+		list-style-type: none;
+
+	}
+	.container {
+		position: relative;
+		width: 50%;
+	}
+	.avatar{
+		float:left;
+		width:250px;
+		height:250px;
+		margin-bottom:0;
+	}
+	.overlay {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 250px;
+		width: 250px;
+		opacity: 0;
+		transition: .5s ease;
+		background-color: #358FD8;
+	}
+
+	.container:hover .overlay {
+		opacity: 1;
+	}
+
+	.title {
+		color: white;
+		font-size: 20px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		text-align: center;
+	}
+	.header {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/banner2.png");
+		height:400px;
+		
+		text-align: center;
+		color: white;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.quote{
+		
+	}
+    </style>
+</head>
+<body>
+    <link rel="stylesheet" type="text/css" href="fm_landing_css.css">
+    <!--SURNAME, FIRSTNAME-->
+    <!--DATE-->
+	
+	<ul>
+		<li><a href="">Contact</a></li>
+        <li><a href="">Self improvement articles</a></li>
+        <li><a class="active" href="">About</a></li>
+        <li><a href="landingpage.html">Home</a></li>
+        <li><img src="images/logo.png"/></li>
+    </ul>
+	
+	<div class="header">
+		<div class="hero-text">
+			<h1>About Finer Minds</h1>
+			<p>Our STORY</p>
+		</div>
+    </div><br><br>
+
+	
+	<h1>MEET THE TEAM</h1>
+	<hr class="line">
+	<br>
+	<div class="parent">
+		<div class="child container" style="margin-left:60px;">
+			<img src="images/avatar1.png" alt="Avatar" class="avatar"
+			href="">
+			<div class="overlay">
+				<div class="title">Team Leader</div>
+			</div>
+		</div>
+	
+		<div class="child container">
+			<img src="images/avatar2.png" alt="Avatar" class="avatar"
+			href="">
+			<div class="overlay">
+				<div class="title">Content Specialist</div>
+			</div>
+		</div>
+	
+		<div class="child container">
+			<img src="images/avatar3.png" alt="Avatar" class="avatar"
+			href="">
+			<div class="overlay">
+				<div class="title">Web Developer</div>
+			</div>
+		</div>
+	
+		<div class="child container">
+			<img src="images/avatar4.png" alt="Avatar" class="avatar"
+			href="">
+			<div class="overlay">
+				<div class="title">UX Designer</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	<br><br><br><br><br><br><br><br>
+	<ul>
+		<li class="name" style="margin-left:130px;">Faye Alcazar</li>
+		<li class="name" style="margin-left:142px;">Erlan Binasahan</li>
+		<li class="name" style="margin-left:142px;">Khaye Buerano</li>
+		<li class="name" style="margin-left:142px;">Mark Cadelina</li>
+	</ul>
+	<br>
+	
+	<p>We are a group of developers and designers inspired to create a safe
+	haven for self-improvement and mental health.</p>
+	
+	<h3>Engulf in a meaningful JOURNEY with us</h3>
+	
+	<hr class="yline">
+	<p><b>At FinerMinds, we believe in inspiring everyone to become their very BEST version. 
+	Our mission and vision<br> is to give hope and learnings by sharing stories and experiences of people who have 
+	improved themselves. </b></p>
+	<hr class="yline">
+	<p class="quote" style="text-align:center"><i><b>"Improvement will always be different from one another,
+	but the structure <br> of improving oneself has an identity that all of us could learn from."</b></i></p>
+	<br><br>
+</body>
+</html>
