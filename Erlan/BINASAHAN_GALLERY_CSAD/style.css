@@ -1,0 +1,41 @@
+div.gallery {
+  margin: 15px;
+  
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+	opacity: 1;
+	border: 4px outset;
+	border-left-color:grey;
+	border-top-color:grey;
+	border-right-color:grey;
+	border-bottom-color:grey;
+
+ 
+}
+
+div.gallery img {
+  width: 100%;
+  height: 10em;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+img{
+	width: 200px;
+	height: 150px;
+	margin: 15px;
+	opacity: 0.75;
+	border-radius: 50px;
+	position: center;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}

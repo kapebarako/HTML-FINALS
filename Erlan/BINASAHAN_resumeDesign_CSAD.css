@@ -1,0 +1,103 @@
+body {
+    margin: 40px;
+    font-family: serif;
+    font-size: 12pt;
+	background-color: AntiqueWhite;
+	border: 10px dashed #EDBB99;
+	border-radius: 25px 25px 25px 25px;
+	border-color: 
+}
+header h1 {
+   text-align:center;
+			font-family:'Bookman Old style',serif;
+			font-size:5em;
+			color: #8b8378;
+			background-color:BurlyWood;
+			text-transform:uppercase;
+			word-spacing:15px;
+			text-shadow: 5px 5px 10px LightSalmon;
+}
+
+header span {
+    font-size: 10pt;
+    float: right;
+}
+
+section h2 {
+    font-family: "Bookman Old style", serif;
+    font-size: 14pt;
+	 padding-left: 10px;
+	 color: #E59866 ;
+}
+
+section p {
+    margin-left: 40px;
+}
+
+section.coverletter {
+    margin-top: 40px;
+}
+
+section.coverletter p {
+    margin-left: 0px;
+}
+
+section ul {
+    list-style-type: circle;
+}
+
+.jobtable {
+    display: table;
+    width: 100%;
+    border-bottom: 1px solid black;
+    margin-left: 20px;
+}
+
+.edtable {
+    display: table;
+    width: 100%;
+    margin-left: 20px;
+    padding-bottom: 15px;
+}
+
+.skillstable {
+    display: table;
+    width: 100%;
+}
+
+.table {
+    display: table;
+    margin-left: 20px;
+}
+
+.tablerow {
+    display: table-row;
+}
+
+.jobtitle {
+    display: table-cell;
+    font-style: italic;
+}
+
+.right {
+    display: table-cell;
+    text-align: right;
+}
+
+.cell {
+    display: table-cell;
+}
+
+.onlinecell {
+    font-style: italic;
+    padding-right: 10px;
+}
+
+.urlcell {
+    display: table-cell;
+    letter-spacing: 1px;
+}
+
+.pagebreak {
+    page-break-before: always;
+}
