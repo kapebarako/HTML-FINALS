@@ -1,0 +1,111 @@
+
+.overlay {
+
+ 	background-size: cover;
+ 	background-position: center center;
+ 	background-repeat: no-repeat;
+ 	background-attachment: fixed;
+
+}
+	
+h1 {
+
+	text-align:center;
+	font-family: Rockwell,'Bookman Old style',serif;
+	font-size:3em;
+	color: white;
+	text-transform:uppercase;
+	word-spacing:15px;
+	text-shadow: 5px 5px 3px  #6d4e46;
+
+}
+a {
+
+	color: black;
+  background: #F3F3F3;
+  border: 1px red solid;
+  padding: 5px 10px;
+  border-radius: 2px;
+  font-weight: bold;
+  font-size: 12pt;
+  outline: none;
+  margin: 2em;
+
+    
+
+}
+
+a:hover {
+
+	background-color: grey;
+	color: black;
+}
+
+a:active {
+
+	background-color: black;
+	color: white;
+
+}
+
+a:focus {
+
+	background-color: black;
+	color: white;
+
+}
+
+p {
+
+	color: black;
+	font-family: cursive, Verdana, Arial, Tahoma, Serif;
+	font-weight: bold;
+  margin: 2.5em;
+  text-align: center;
+  font-size: 18px;
+  background-color: lightblue;
+
+
+}
+
+b {
+	color: lightblue;
+
+}
+
+.glow {
+
+  font-size: 45px;
+  color: lightblue;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+
+}
+  
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #FE9A2E, 0 0 20px #FE9A2E, 0 0 30px #BCF5A9, 0 0 40px #BCF5A9, 0 0 50px #BCF5A9, 0 0 60px #BCF5A9, 0 0 70px#BCF5A9;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #FE2E2E, 0 0 30px #B45F04, 0 0 40px #B45F04, 0 0 50px #B45F04, 0 0 60px #B45F04, 0 0 70px #B45F04, 0 0 80px #B45F04;
+  }
+}
+
+.oval {
+   
+      width: 200px;
+      height: 100px;
+      background: cyan;
+      border-radius: 100px / 50px;
+    }
+	
+mark {
+
+ background-color: #A8D8FF;
+
+}
+
+
+
+

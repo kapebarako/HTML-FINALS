@@ -1,0 +1,169 @@
+html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+
+body { margin: 0; font-size: 0.8em; line-height: 1.4; background-color: tomato;}
+
+body, button, input, select, textarea { font-family: sans-serif; color: #222; }
+
+a { color: #00e; }
+a:visited { color: #551a8b; }
+a:hover { color: #06e; }
+a:focus { outline: thin dotted; }
+
+a:hover, a:active { outline: 0; }
+
+b, strong { font-weight: bold;  font-style: italic;}
+
+blockquote { margin: 1em 40px; }
+
+dfn { font-style: italic; }
+
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+
+pre, code, kbd, samp { font-family: monospace, serif; _font-family: 'courier new', monospace; font-size: 1em; }
+
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+
+q { quotes: none; }
+q:before, q:after { content: ""; content: none; }
+
+small { font-size: 85%; }
+
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
+dd { margin: 0 0 0 40px; }
+nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
+
+.container {
+	width: 80%;
+	max-width: 600px;
+	margin: 0 auto;	
+}
+
+table{
+	width: 100%;
+}
+
+thead{
+	font-weight: bold;
+}
+
+td{	
+	border: 1px solid #ddd;
+	padding: 2px;
+}
+
+header {
+    font-family: "Trajan Pro", serif;
+    padding-bottom: 10px;
+}
+
+header h1 {
+    font-size: 20pt;
+    letter-spacing: 2pt;
+    border-bottom: 1px solid black;
+    margin-bottom: 4px;
+    color:black;
+}
+
+section h2 {
+    font-family: "Trajan Pro", serif;
+    font-size: 14pt;
+}
+
+section p {
+    margin-left: 40px;
+}
+
+section.coverletter {
+    margin-top: 40px;
+}
+
+section.coverletter p {
+    margin-left: 0px;
+}
+
+section ul {
+    list-style-type: circle;
+}
+
+.jobtable {
+    display: table;
+    width: 100%;
+    border-bottom: 1px solid black;
+    margin-left: 20px;
+}
+
+.edtable {
+    display: table;
+    width: 100%;
+    margin-left: 20px;
+    padding-bottom: 15px;
+}
+
+.skillstable {
+    display: table;
+    width: 100%;
+}
+
+.table {
+    display: table;
+    margin-left: 20px;
+}
+
+.tablerow {
+    display: table-row;
+}
+
+.right {
+    display: table-cell;
+    text-align: right;
+}
+
+.cell {
+    display: table-cell;
+}
+
+.onlinecell {
+    font-style: italic;
+    padding-right: 10px;
+}
+
+.contact {
+
+    font-family: bold;
+    font-size: 12px;
+    color: cyan;
+} 
+
+.description1 {
+
+    border: 5px outset black;
+    color: #00FFBF;
+    background-color: grey;
+}
+
+.description3 {
+
+    background-color: pink;
+    font-family: bold;
+}
+
+.description5 {
+
+    border: 5px outset black;
+    color: brown;
+    background-color: grey;
+    text-align: center;
+    font-family: bold;
+
+}
+
+header {
+
+    color: darkviolet;
+
+}
+

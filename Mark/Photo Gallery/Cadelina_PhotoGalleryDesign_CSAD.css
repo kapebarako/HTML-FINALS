@@ -1,0 +1,46 @@
+h1 {
+	text-align: center;
+	font-size: 4em;
+	color: #58ACFA;
+	font-family: monospace;
+	background-color: cyan;
+}
+
+
+h2 {
+	text-align: left;
+	font-size: 2em;
+	color: #FE9A2E;
+	font-family: monospace;
+}
+
+h3 {
+	text-align: center;
+	font-family: cursive;
+}
+
+h3 {
+	text-align: center;
+	font-size: 2em;
+	font-family: cursive;
+}
+
+
+a {
+	color: #F5D0A9;
+	font-size: 1.25em;
+	font-family: bold, verdana;
+}
+
+span {
+	font-size: 2em;
+	font-family: monospace;
+	font-family: cursive;
+	background-color: lightblue;
+
+}
+
+img {
+	margin: 1.5em;
+}
+
