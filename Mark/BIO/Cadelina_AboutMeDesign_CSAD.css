@@ -1,0 +1,80 @@
+body{
+	background-size: cover;
+	font-family:Verdana,Tahoma, Sans-serif;
+	color:#043927;
+
+}
+
+.myDiv {
+  	border: 5px outset blue;
+  	background-color: lightblue;    
+  	text-align: center;
+
+}
+	
+h1{
+	text-align:center;
+	font-family:Gill Sans Extrabold,cursive, sans-serif;
+	font-size: 2.5em;
+	background-color: #F5A9BC;
+	color:#4B8A08;
+	text-transform:uppercase;
+	word-spacing:30px;
+	text-shadow: 5px 5px 6px gray;
+
+}
+
+h2 {
+	text-align: center;
+	font-size: 2em;
+	font-family: cursive;
+}
+
+h3{
+
+	color: #F5D0A9;
+	font-style:oblique;
+	font-family: Georgia;
+
+}
+
+h4{
+
+	color: black;
+	font-style:oblique;
+	font-family: Georgia;
+
+
+p{
+	text-align: justify;
+	font-family: bold;
+	font-size: 1.25em;
+	text-indent: 40px;
+	line-height: 15px;
+	word-spacing: 3px;
+	font-style:oblique;
+	colo: grey;
+
+}
+
+pre{
+	color:darkblue;
+	font-size: 1.2em;
+	font-family: "Times New Roman", Times, serif;
+	text-shadow: 5px 5px 7px white;
+}
+
+a{
+	font-weight: bold;
+	font-style: oblique;
+	color: cyan;
+
+
+}
+
+
+sup{
+
+	background-color: grey;
+
+}
