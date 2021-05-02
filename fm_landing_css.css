@@ -162,3 +162,17 @@ li a:hover, a.button:focus, .dropdown:hover .dropbtn{
   .dropdown:hover .dropdown-content {
     display:block;
   }
+
+  ul li:hover > ul,
+ul li:focus-within > ul,
+ul li ul:hover,
+ul li ul:focus {
+   visibility: visible;
+   opacity: 1;
+   display: block;
+}
+
+ul li ul li {
+  clear: both;
+  width: 100%;
+}
