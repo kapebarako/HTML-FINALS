@@ -70,7 +70,7 @@ li img{
     padding: 7px 0 0 10px;
 }
 
-li a {
+li a, div li{
     display: block;
     color: #0c185a;
     text-align: center;
@@ -80,24 +80,24 @@ li a {
     float: right;
 }
 
-li a:hover {
+li a:hover{
     color: #358fd8;
 }
 
-.active {
+.active{
     color:#0c185a;
     background-color:#ffc70f;
 }
 
 
-.header-image {
+.header-image{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/nice.jpg");
     height: 400px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.hero-text {
+.hero-text{
     margin: auto;
     padding-top: 120px;
     text-align: center;
