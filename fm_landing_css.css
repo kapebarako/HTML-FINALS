@@ -52,26 +52,27 @@ hr.line2{
     width: 100%;
 }
 
-ul {
+ul{
+    background: #ffffff !important; 
     font-size:20px;
     font-family: DM Sans;
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    display:inline-block;
 }
 
 li img{
+    background-color: #ffffff;
     float: left;
     height:70px;
     padding: 7px 0 0 10px;
 }
 
 li a, li button{
+    background-color: #ffffff;
     display: block;
     color: #0c185a;
     text-align: center;
@@ -127,6 +128,7 @@ li a:hover, a.button:focus, .dropdown:hover .dropbtn{
   }
 
   .dropdown .dropbtn {
+    background-color: #ffffff;
     font-size: large;  
     font-weight: bold;
     border: none;
@@ -162,4 +164,6 @@ li a:hover, a.button:focus, .dropdown:hover .dropbtn{
   
   .dropdown:hover .dropdown-content {
     display:block;
+    position:absolute;
+    top: 90px;
   }
