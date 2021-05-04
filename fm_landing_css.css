@@ -44,11 +44,12 @@ div.text{
 }
 
 hr.line{
-    border: 2px solid #bed0e6;
-    width: 85%;
+    margin:auto;
+    border: 3px solid #bed0e6;
+    width: 90%;
 }
 hr.line2{
-    border: 1px solid #f7cc10;
+    border: 2px solid #f7cc10;
     width: 100%;
 }
 
