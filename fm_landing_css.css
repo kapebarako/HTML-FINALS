@@ -1,3 +1,4 @@
+
 body{
     font-family: 'Montserrat';
     line-height: 30px;
@@ -23,6 +24,7 @@ cite{
     text-align: right;
 }
 div.center{
+    margin:auto;
     text-align: center;
     padding: 0 30px;
 }
@@ -52,6 +54,10 @@ hr.line2{
     border: 2px solid #f7cc10;
     width: 100%;
 }
+hr.line3{
+    border: 2px solid #34588d;
+    width: 100%;
+}
 
 ul{
     background: #ffffff !important; 
@@ -63,6 +69,7 @@ ul{
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+    overflow: hidden;
 }
 
 li img{
@@ -85,6 +92,7 @@ li a, li button{
 
 li a:hover, a.button:focus, .dropdown:hover .dropbtn{
     color: #358fd8;
+    text-decoration: none;
 }
 
 .active{
