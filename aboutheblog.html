@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Montserrat&family=Roboto:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Montserrat&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>FinerMinds</title>
 <head>
     <base target="newSpace">
     <meta charset="utf-8">
@@ -97,16 +101,33 @@
     <link rel="stylesheet" type="text/css" href="fm_landing_css.css">
     <!--SURNAME, FIRSTNAME-->
     <!--DATE-->
-
-	<ul>
-		<li><a href="">Contact</a></li>
-        <li><a href="">Self help books</a></li>
-        <li><a href="articles.html">Self improvement articles</a></li>
-        <li><a class="active" href="aboutheblog.html">the Blog</a></li>
-        <li><a href="AboutUs.html">the Team</a></li>
-        <li><a href="index.html">Home</a></li>
-        <li><img src="images/logo.png"/></li>
-    </ul>
+	<div id="wrap">
+		<nav>
+		  <div>
+			<img class="logo" src="images/logo.png"/>
+		  </div>
+		  <button type="button" class="btn-hamburger" data-action="nav-toggle">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		  </button>
+		  <ul class="nav-menu">
+			<li class="nav-item"><a href="index.html">Home</a></li>
+			<li class="nav-item dropdown active">
+			  <a href="#" data-action="dropdown-toggle">About</a>
+			  <div class="dropdown-menu">
+				<a class="dropdown-item" href="aboutheblog.html">the Blog</a>
+				<a class="dropdown-item" href="AboutUs.html">the Team</a>
+			  </div>
+			</li>
+			<li class="nav-item"><a href="articles.html">Self improvement articles</a></li>
+			<li class="nav-item"><a href="#">Self help books</a></li>
+			<li class="nav-item"><a href="#">Contact</a></li>
+		  </ul>
+		</nav>
+	<br><br>
 
 	<div class="header">
 		<div class="hero-text">
@@ -116,7 +137,7 @@
     </div><br><br>
 
 
-	<h1>Mission</h1>
+	<h1>MISSION</h1>
 	<div class="center">
 	<hr class="line">
 	<p>Once you've figured out who you are and where you want to go, the next step is to change your mind and body in order to achieve your objectives. You develop a positive and emotionally fulfilled heart by systematically achieving your goals and mastering your abilities. You then become self-actualized in the realization that you have the potential to become what you were meant to be.</p>
@@ -125,7 +146,7 @@
 	<br>
 	</div>
 	
-	<h1>Vision</h1>
+	<h1>VISION</h1>
 	<div class="center">
 	<hr class="line">
 	<p>Whenever we think we are good, we can be even better. The majority of people want to change themselves in some way, whether it's to lose weight, quit smoking, or boost their self-esteem. Self-improvement is something we do in our lives, but it is a difficult job that requires a lot of motivation. Maintaining your motivation rate can be a full-time task in and of itself.
@@ -143,5 +164,27 @@ In order to achieve the motivation required for self-improvement, we need to loo
 	<p class="quote" style="text-align:center"><i><b>"Improvement will always be different from one another,
 	but the structure <br> of improving oneself has an identity that all of us could learn from."</b></i></p>
 	<br><br>
+	<script>
+		let nav = document.querySelector('nav');
+		let dropdown = nav.querySelector('.dropdown');
+		let dropdownToggle = nav.querySelector("[data-action='dropdown-toggle']");
+		let navToggle = nav.querySelector("[data-action='nav-toggle']");
+  
+		dropdownToggle.addEventListener('click', () => {
+		  if (dropdown.classList.contains('show')) {
+			dropdown.classList.remove('show');
+		  } else {
+			dropdown.classList.add('show');
+		  }
+		})
+  
+		navToggle.addEventListener('click', () => {
+		  if (nav.classList.contains('opened')) {
+			nav.classList.remove('opened');
+		  } else {
+			nav.classList.add('opened');
+		  }
+		})
+	  </script>
 </body>
 </html>

@@ -10,21 +10,22 @@
     <style type= "text/css">
     .container {
         width: 90%;
-        height: 200px;
+        height: 100px;
         margin: auto;
         padding: 10px;
+        top:-100px;
     }
 
     .one {
         width: 30%;
         height: 250px;
         float: left;
-        margin: 0 30px 30px 0;
+        margin: 0 35px 30px 0;
     }
 
     .two {
         margin-left: 15%;
-        height: 200px;
+        height: 150px;
         margin: 0 30px 70px 0;
     }
 
@@ -33,15 +34,34 @@
 
 <body>
     <link rel="stylesheet" type="text/css" href="fm_landing_css.css">   
-    <ul>
-		<li><a href="">Contact</a></li>
-        <li><a href="">Self help books</a></li>
-        <li><a class="active" href="articles.html">Self improvement articles</a></li>
-        <li><a href="aboutheblog.html">the Blog</a></li>
-        <li><a href="AboutUs.html">the Team</a></li>
-        <li><a href="index.html">Home</a></li>
-        <li><img src="images/logo.png"/></li>
-    </ul>
+    <div id="wrap">
+        <nav>
+          <div>
+            <img class="logo" src="images/logo.png"/>
+          </div>
+          <button type="button" class="btn-hamburger" data-action="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html">Home</a></li>
+            <li class="nav-item dropdown">
+              <a href="#" data-action="dropdown-toggle">About</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="aboutheblog.html">the Blog</a>
+                <a class="dropdown-item" href="AboutUs.html">the Team</a>
+              </div>
+            </li>
+            <li class="nav-item active"><a href="articles.html">Self improvement articles</a></li>
+            <li class="nav-item"><a href="#">Self help books</a></li>
+            <li class="nav-item"><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+    <br><br><br>
+
     <hr class="line3">
     <h1 style="text-align: left; margin-left:30px;">Headline of the Article</h1>
     <h5 style="text-indent: 30px;">Author, Date</h5>
@@ -64,14 +84,16 @@
         esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
         non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </div>
-    <br>
+
     <div class="container">
+
         <div class="one">
             <hr class="line2">
                 <h1>"</h1><h5>Some Important Quote from the Article. Lorem ipsum dolor 
                     sit amet, consectetur adipiscing</h5><h1>"</h1>
             <hr class="line2">
         </div>
+
         <div class="two" style="text-align:justify;">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 
@@ -86,8 +108,9 @@
             esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
             non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </div> 
+
     </div> 
-    <br><br><br><br><br>
+    <br><br><br><br><br><br><br><br>
     <div class="center" style="text-align:justify; margin:0 50px;">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 
@@ -103,4 +126,29 @@
         non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </div>
     <br><br><br>
+    </div>
+    <script>
+		let nav = document.querySelector('nav');
+		let dropdown = nav.querySelector('.dropdown');
+		let dropdownToggle = nav.querySelector("[data-action='dropdown-toggle']");
+		let navToggle = nav.querySelector("[data-action='nav-toggle']");
+  
+		dropdownToggle.addEventListener('click', () => {
+		  if (dropdown.classList.contains('show')) {
+			dropdown.classList.remove('show');
+		  } else {
+			dropdown.classList.add('show');
+		  }
+		})
+  
+		navToggle.addEventListener('click', () => {
+		  if (nav.classList.contains('opened')) {
+			nav.classList.remove('opened');
+		  } else {
+			nav.classList.add('opened');
+		  }
+		})
+	  </script>
+</body>
+</html>
 

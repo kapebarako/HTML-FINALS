@@ -3,12 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="description" content="An example pen showing how a basic CSS Grid container can create a nice, responsive card layout.">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta charset="utf-8">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Montserrat&family=Roboto:wght@300&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>FinerMinds</title>
     <style type= "text/css">
 
@@ -17,34 +15,49 @@
 <body>
     <link rel="stylesheet" type="text/css" href="articlestyle.css">	
 
-    <ul>
-		<li><a href="">Contact</a></li>
-        <li><a href="">Self help books</a></li>
-        <li><a class="active" href="articles.html">Self improvement articles</a></li>
-        <li><a href="aboutheblog.html">the Blog</a></li>
-        <li><a href="AboutUs.html">the Team</a></li>
-        <li><a href="index.html">Home</a></li>
-        <li><img src="images/logo.png"/></li>
-    </ul>
+    <div id="wrap">
+      <nav>
+        <div>
+          <img class="logo" src="images/logo.png"/>
+        </div>
+        <button type="button" class="btn-hamburger" data-action="nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index.html">Home</a></li>
+          <li class="nav-item dropdown">
+            <a href="#" data-action="dropdown-toggle">About</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="aboutheblog.html">the Blog</a>
+              <a class="dropdown-item" href="AboutUs.html">the Team</a>
+            </div>
+          </li>
+          <li class="nav-item active"><a href="articles.html">Self improvement articles</a></li>
+          <li class="nav-item"><a href="#">Self help books</a></li>
+          <li class="nav-item"><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+  <br><br>
 
     <div class="header-banner">
         <div class="hero-text">
-          <br>
           <h1 style="font-size:50px">Self Improvement Articles</h1>
-          <br>
           <p>Discover <b>NEW</b> Horizons</p>
         </div>
     </div>
 
     <div class="center">
         <br><br><br>
-        <h1>ARTICLES THAT INSPIRE</h1><br>
+        <h1 style="color:#ffc400">ARTICLES THAT INSPIRE</h1>
         <hr class="line">
     </div>
 
-<br>   
-<br>
-<h2>Mental Health</h2><br>
+<br><br><br>   
+<h2>Mental Health</h2>
 <hr class="line2">  
 <div class="card-container">
 
@@ -175,9 +188,9 @@
 
 </div>
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-<h2>Self Awareness</h2><br>
+<h2>Self Awareness</h2>
 <hr class="line2">  
 <div class="card-container">
 
@@ -308,9 +321,9 @@
 
 </div>
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-<h2>Relationships</h2><br>
+<h2>Relationships</h2>
 <hr class="line2">  
 <div class="card-container">
 
@@ -441,5 +454,28 @@
 
 </div>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<script>
+  let nav = document.querySelector('nav');
+  let dropdown = nav.querySelector('.dropdown');
+  let dropdownToggle = nav.querySelector("[data-action='dropdown-toggle']");
+  let navToggle = nav.querySelector("[data-action='nav-toggle']");
+
+  dropdownToggle.addEventListener('click', () => {
+    if (dropdown.classList.contains('show')) {
+      dropdown.classList.remove('show');
+    } else {
+      dropdown.classList.add('show');
+    }
+  })
+
+  navToggle.addEventListener('click', () => {
+    if (nav.classList.contains('opened')) {
+      nav.classList.remove('opened');
+    } else {
+      nav.classList.add('opened');
+    }
+  })
+</script>
 </body>
 </html>

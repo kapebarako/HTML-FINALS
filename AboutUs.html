@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Montserrat&family=Roboto:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Montserrat&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>FinerMinds</title>
 <head>
     <base target="newSpace">
     <meta charset="utf-8">
@@ -26,10 +30,10 @@
 		display:inline-flex;
 	}
 	.child{
-		margin-left:30px;
-		width:50px;
-		height:50px;
-		border:1px solid black;
+		margin-left:0px;
+		width:0px;
+		height:0px;
+		border:none;
 	}
 	.name{
 		color:#ffb700;
@@ -40,14 +44,14 @@
 
 	}
 	.container {
-
-		width: 50%;
+		width: 28%;
 	}
 	.avatar{
 		float:left;
 		width:250px;
 		height:250px;
 		margin-bottom:0;
+		margin:0;
 	}
 	.overlay {
 		position:relative;
@@ -93,30 +97,47 @@
     <link rel="stylesheet" type="text/css" href="fm_landing_css.css">
     <!--SURNAME, FIRSTNAME-->
     <!--DATE-->
-
-	<ul>
-		<li><a href="">Contact</a></li>
-        <li><a href="">Self help books</a></li>
-        <li><a href="articles.html">Self improvement articles</a></li>
-        <li><a href="aboutheblog.html">the Blog</a></li>
-        <li><a class="active" href="AboutUs.html">the Team</a></li>
-        <li><a href="index.html">Home</a></li>
-        <li><img src="images/logo.png"/></li>
-    </ul>
+    <div id="wrap">
+      <nav>
+        <div>
+          <img class="logo" src="images/logo.png"/>
+        </div>
+        <button type="button" class="btn-hamburger" data-action="nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index.html">Home</a></li>
+          <li class="nav-item dropdown active">
+            <a href="#" data-action="dropdown-toggle">About</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="aboutheblog.html">the Blog</a>
+              <a class="dropdown-item" href="AboutUs.html">the Team</a>
+            </div>
+          </li>
+          <li class="nav-item"><a href="articles.html">Self improvement articles</a></li>
+          <li class="nav-item"><a href="#">Self help books</a></li>
+          <li class="nav-item"><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+  <br><br>
 
 	<div class="header">
 		<div class="hero-text">
 			<h1>About Finer Minds</h1>
 			<p>Our <b>STORY</b></p>
 		</div>
-    </div><br><br>
+    </div><br><br><br>
 
 
 	<h1>MEET THE TEAM</h1>
 	<hr class="line">
-	<br>
+
 	<div class="parent">
-		<div class="child container" style="margin-left:125px;">
+		<div class="child container" style="margin-left:50px;">
 			<img src="faye/pictures/pog.jpg" alt="Avatar" class="avatar">
       <a target="newWindow" href="faye/ALCAZAR_LANDINGPAGE_CSAD.html">
       <div class="overlay">
@@ -156,7 +177,7 @@
 
 	<br><br><br><br><br><br><br><br>
 	<ul>
-		<li class="name" style="margin-left:200px;">Faye Alcazar</li>
+		<li class="name" style="margin-left:125px;">Faye Alcazar</li>
 		<li class="name" style="margin-left:142px;">Erlan Binasahan</li>
 		<li class="name" style="margin-left:142px;">Khaye Buerano</li>
 		<li class="name" style="margin-left:142px;">Mark Cadelina</li>
@@ -176,5 +197,28 @@
 	<p class="quote" style="text-align:center"><i><b>"Improvement will always be different from one another,
 	but the structure <br> of improving oneself has an identity that all of us could learn from."</b></i></p>
 	<br><br>
+
+	<script>
+		let nav = document.querySelector('nav');
+		let dropdown = nav.querySelector('.dropdown');
+		let dropdownToggle = nav.querySelector("[data-action='dropdown-toggle']");
+		let navToggle = nav.querySelector("[data-action='nav-toggle']");
+  
+		dropdownToggle.addEventListener('click', () => {
+		  if (dropdown.classList.contains('show')) {
+			dropdown.classList.remove('show');
+		  } else {
+			dropdown.classList.add('show');
+		  }
+		})
+  
+		navToggle.addEventListener('click', () => {
+		  if (nav.classList.contains('opened')) {
+			nav.classList.remove('opened');
+		  } else {
+			nav.classList.add('opened');
+		  }
+		})
+	  </script>
 </body>
 </html>
