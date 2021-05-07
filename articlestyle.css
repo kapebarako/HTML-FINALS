@@ -331,12 +331,12 @@ nav.opened .btn-hamburger span:nth-child(3) {
   
   .card-1 .card-img,
   .card-1 .card-img-hovered {
-    background-image: var(--card-img-hovered-overlay), url(https://source.unsplash.com/Qm_n6aoYzDs);
+    background-image: var(--card-img-hovered-overlay), url(images/mh1.jpeg);
   }
   
   .card-2 .card-img,
   .card-2 .card-img-hovered {
-    background-image: var(--card-img-hovered-overlay), url(https://source.unsplash.com/C-v1p2DTakA);
+    background-image: var(--card-img-hovered-overlay), url(images/mh2.jpg);
   }
   
   .card-3 .card-img,
@@ -369,7 +369,57 @@ nav.opened .btn-hamburger span:nth-child(3) {
     background-image: var(--card-img-hovered-overlay), url(https://source.unsplash.com/zAi2Is48-MA);
   }
 
-  
+  .card-9 .card-img,
+  .card-9 .card-img-hovered {
+    background-image: var(--card-img-hovered-overlay), url(https://source.unsplash.com/zAi2Is48-MA);
+  }
+
+  .card-10 .card-img,
+  .card-10 .card-img-hovered {
+    background-image: var(--card-img-hovered-overlay), url(https://source.unsplash.com/zAi2Is48-MA);
+  }
+
+  .card-11 .card-img,
+  .card-11 .card-img-hovered {
+    background-image: var(--card-img-hovered-overlay), url(https://source.unsplash.com/zAi2Is48-MA);
+  }
+
+  .card-12 .card-img,
+  .card-12 .card-img-hovered {
+    background-image: var(--card-img-hovered-overlay), url(https://source.unsplash.com/zAi2Is48-MA);
+  }
+
+  .card-13 .card-img,
+  .card-13 .card-img-hovered {
+    background-image: var(--card-img-hovered-overlay), url(https://source.unsplash.com/zAi2Is48-MA);
+  }
+
+  .card-14 .card-img,
+  .card-14 .card-img-hovered {
+    background-image: var(--card-img-hovered-overlay), url(https://source.unsplash.com/zAi2Is48-MA);
+  }
+
+  .card-15 .card-img,
+  .card-15 .card-img-hovered {
+    background-image: var(--card-img-hovered-overlay), url(https://source.unsplash.com/zAi2Is48-MA);
+  }
+
+  .card-16 .card-img,
+  .card-16 .card-img-hovered {
+    background-image: var(--card-img-hovered-overlay), url(https://source.unsplash.com/zAi2Is48-MA);
+  }
+
+  .card-17 .card-img,
+  .card-17 .card-img-hovered {
+    background-image: var(--card-img-hovered-overlay), url(images/r1.png);
+  }
+
+  .card-18 .card-img,
+  .card-18 .card-img-hovered {
+    background-image: var(--card-img-hovered-overlay), url(images/r2.png);
+  }
+
+
   .header-banner {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/articles.jpg");
     height:400px;

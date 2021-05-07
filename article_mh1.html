@@ -1,0 +1,147 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Montserrat&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>FinerMinds</title>
+    <style type= "text/css">
+    .container {
+        width: 90%;
+        height: 100px;
+        margin: auto;
+        padding: 10px;
+        top:-100px;
+    }
+
+    .one {
+        width: 30%;
+        height: 250px;
+        float: left;
+        margin: 0 35px 30px 0;
+    }
+
+    .two {
+        margin-left: 15%;
+        height: 150px;
+        margin: 0 30px 70px 0;
+    }
+
+    b{
+        color: #fdc819;
+    }
+
+    </style>
+</head>
+
+<body>
+    <link rel="stylesheet" type="text/css" href="fm_landing_css.css">   
+    <div id="wrap">
+        <nav>
+          <div>
+            <img class="logo" src="images/logo.png"/>
+          </div>
+          <button type="button" class="btn-hamburger" data-action="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html">Home</a></li>
+            <li class="nav-item dropdown">
+              <a href="#" data-action="dropdown-toggle">About</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="aboutheblog.html">the Blog</a>
+                <a class="dropdown-item" href="AboutUs.html">the Team</a>
+              </div>
+            </li>
+            <li class="nav-item active"><a href="articles.html">Self improvement articles</a></li>
+            <li class="nav-item"><a href="#">Self help books</a></li>
+            <li class="nav-item"><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+    <br><br><br>
+
+    <hr class="line3">
+    <h1 style="text-align: left; margin-left:30px;">Mental Illness Stigma, Help Seeking, and Public Health Programs</h1>
+    <h5 style="text-indent: 30px;">Claire Henderson PhD <b> || </b> May 11, 2013</h5>
+    <hr class="line3">
+    <br>
+    <div class="right"><img src="images/mh1.jpeg" width="500px" style="margin:0 20px;"></div>
+    <div class="center" style="text-align:justify; margin:0 50px;">
+        <h4>Increasing evidence gests that significantly greater barriers exist to receipt of mental health 
+            care in comparison with physical health care.</h4>
+            Worldwide, more than 70% of young people and adults with mental illness do not receive any mental 
+            health treatment from health care staff. The difference between true prevalence and treated prevalence 
+            can be called the treatment This article describes the roles that stigma and discrimination 
+            contribute to the treatment  and assesses the evidence that public health approaches to stigma 
+            and discrimination can facilitate access to mental health care. We present new data from the evaluation 
+            of Time to Change, England’s largest ever program to reduce mental illness stigma and discrimination.
+    </div>
+
+    <div class="container">
+
+        <div class="one">
+            <hr class="line2">
+                <h1>"</h1><h5>Addressing public stigma might reduce experienced and anticipated stigma among 
+                    services users and facilitate help seeking and engagement with mental health care</h5><h1>"</h1>
+            <hr class="line2">
+        </div>
+
+        <div class="two" style="text-align:justify;">
+            Evidence suggests that factors increasing the likelihood of treatment avoidance 
+            or delay before presenting for care include (1) lack of knowledge to identify features 
+            of mental illnesses, (2) ignorance about how to access treatment, (3) prejudice against 
+            people who have mental illness, and (4) expectation of discrimination against people diagnosed
+            with mental illness. Stigma and discrimination and their influence on access to care may vary based 
+            on experience of mental distress or other sociodemographic factors. For instance, psychotic disorders 
+            are highly stigmatizing, and people with psychosis are more likely to be perceived as violent and 
+            unpredictable relative to people with other mental health problems. 
+        </div> 
+
+    </div> 
+    <br><br><br><br><br><br><br><br>
+    <div class="left"><img src="images/mh1_1.jpg" width="500px" style="margin:0 20px;"></div>
+    <div class="center" style="text-align:justify; margin:0 50px;">
+        Addressing public stigma might reduce experienced and anticipated stigma among services users and 
+        facilitate help seeking and engagement with mental health care. For example, individual service users 
+        living in countries with higher rates of help seeking and treatment utilization, in addition to better 
+        perceived access to information about how to deal with mental health problems and less stigmatizing 
+        attitudes, tended to have lower rates of self-stigma and perceived discrimination. Globally, however, 
+        stigmatizing attitudes persist among the public and have been shown to be prevalent and associated 
+        with a reluctance to seek help. Specifically, beliefs about effectiveness of treatment and services 
+        at the start of treatment have been shown to influence subsequent treatment behavior. This is 
+        significant because currently individuals often only access services once they have already experienced 
+        significant impairment, clinical symptoms, and stigma, and these effects may be difficult to reverse.
+    </div>
+    <br><br><br>
+    </div>
+    <script>
+		let nav = document.querySelector('nav');
+		let dropdown = nav.querySelector('.dropdown');
+		let dropdownToggle = nav.querySelector("[data-action='dropdown-toggle']");
+		let navToggle = nav.querySelector("[data-action='nav-toggle']");
+  
+		dropdownToggle.addEventListener('click', () => {
+		  if (dropdown.classList.contains('show')) {
+			dropdown.classList.remove('show');
+		  } else {
+			dropdown.classList.add('show');
+		  }
+		})
+  
+		navToggle.addEventListener('click', () => {
+		  if (nav.classList.contains('opened')) {
+			nav.classList.remove('opened');
+		  } else {
+			nav.classList.add('opened');
+		  }
+		})
+	  </script>
+</body>
+</html>
+

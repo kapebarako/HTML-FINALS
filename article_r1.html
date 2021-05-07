@@ -1,0 +1,145 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Montserrat&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>FinerMinds</title>
+    <style type= "text/css">
+    .container {
+        width: 90%;
+        height: 100px;
+        margin: auto;
+        padding: 10px;
+        top:-100px;
+    }
+
+    .one {
+        width: 30%;
+        height: 250px;
+        float: left;
+        margin: 0 35px 50px 0;
+    }
+
+    .two {
+        margin-left: 15%;
+        height: 450px;
+        margin: 0 30px 70px 0;
+        overflow: hidden;
+    }
+
+    b{
+        color: #fdc819;
+    }
+
+    </style>
+</head>
+
+<body>
+    <link rel="stylesheet" type="text/css" href="fm_landing_css.css">   
+    <div id="wrap">
+        <nav>
+          <div>
+            <img class="logo" src="images/logo.png"/>
+          </div>
+          <button type="button" class="btn-hamburger" data-action="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html">Home</a></li>
+            <li class="nav-item dropdown">
+              <a href="#" data-action="dropdown-toggle">About</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="aboutheblog.html">the Blog</a>
+                <a class="dropdown-item" href="AboutUs.html">the Team</a>
+              </div>
+            </li>
+            <li class="nav-item active"><a href="articles.html">Self improvement articles</a></li>
+            <li class="nav-item"><a href="#">Self help books</a></li>
+            <li class="nav-item"><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+    <br><br><br>
+
+    <hr class="line3">
+    <h1 style="text-align: left; margin-left:30px;">Social Relationships and Health: A Flashpoint for Health Policy</h1>
+    <h5 style="text-indent: 30px;">Debra Umberson and Jennifer Karas Montez <b> || </b> August 4, 2011</h5>
+    <hr class="line3">
+    <br>
+    <div class="right"><img src="images/r1.png" width="500px" style="margin:0 20px;"></div>
+    <div class="center" style="text-align:justify; margin:0 50px;">
+        <h4>Social relationships—both quantity and quality—affect mental health, health behavior, 
+            physical health, and mortality risk.</h4>
+            Sociologists have played a central role in establishing the link between social relationships and health outcomes, 
+            identifying explanations for this link, and discovering social variation (e.g., by gender and race) at the population 
+            level. Studies show that social relationships have short- and long-term effects on health, for better and for worse, and 
+            that these effects emerge in childhood and cascade throughout life to foster cumulative advantage or disadvantage in health.
+    </div>
+    <br><br>
+    <div class="container">
+
+        <div class="one" style="text-align:justify;">
+            <hr class="line2">
+                <h1>"</h1><h5>Studies consistently show that individuals with the lowest level of involvement in social relationships 
+                    are more likely to die than those with greater involvement</h5><h1>"</h1>
+            <hr class="line2">
+        </div> 
+        
+        <div class="two">
+            Many types of scientific evidence show that involvement in social relationships benefits health. The most striking 
+            evidence comes from prospective studies of mortality across industrialized nations. These studies consistently show that 
+            individuals with the lowest level of involvement in social relationships are more likely to die than those with greater involvement. 
+            For example, Berkman and Syme (1979) showed that the risk of death among men and women with the fewest social ties was more than 
+            twice as high as the risk for adults with the most social ties. Moreover, this finding held even when socioeconomic status, health 
+            behaviors, and other variables that might influence mortality, were taken into account. Social ties also reduce mortality risk among 
+            adults with documented medical conditions. For instance, Brummett and colleagues (2001) found that, among adults with coronary artery disease, 
+            the socially isolated had a risk of subsequent cardiac death 2.4 times greater than their more socially connected peers.
+        </div>
+
+    </div> 
+    <br><br><br><br><br><br><br><br><br><br>
+    <div class="left"><img src="images/r1_1.jpg" width="500px" style="margin:0 20px;"></div>
+    <div class="center" style="text-align:justify; margin:0 50px;">
+        In addition to mortality, involvement in social relationships has been associated with specific health conditions as well as biological markers 
+        indicating risk of preclinical conditions. Several recent review articles provide consistent and compelling evidence linking a low quantity or 
+        quality of social ties with a host of conditions, including development and progression of cardiovascular disease, recurrent myocardial infarction, 
+        atherosclerosis, autonomic dysregulation, high blood pressure, cancer and delayed cancer recovery, and slower wound healing 
+        (Ertel, Glymour, and Berkman 2009; Everson-Rose and Lewis 2005; Robles and Kiecolt-Glaser 2003; Uchino 2006). Poor quality and low quantity of social 
+        ties have also been associated with inflammatory biomarkers and impaired immune function, factors associated with adverse health outcomes and mortality 
+        (Kiecolt-Glaser et al. 2002; Robles and Kiecolt-Glaser 2003). Marriage is perhaps the most studied social tie. Recent work shows that marital history 
+        over the life course shapes a range of health outcomes, including cardiovascular disease, chronic conditions, mobility limitations, self-rated health, 
+        and depressive symptoms (Hughes and Waite 2009; Zhang and Hayward 2006).
+    </div>
+    <br><br><br>
+    </div>
+    <script>
+		let nav = document.querySelector('nav');
+		let dropdown = nav.querySelector('.dropdown');
+		let dropdownToggle = nav.querySelector("[data-action='dropdown-toggle']");
+		let navToggle = nav.querySelector("[data-action='nav-toggle']");
+  
+		dropdownToggle.addEventListener('click', () => {
+		  if (dropdown.classList.contains('show')) {
+			dropdown.classList.remove('show');
+		  } else {
+			dropdown.classList.add('show');
+		  }
+		})
+  
+		navToggle.addEventListener('click', () => {
+		  if (nav.classList.contains('opened')) {
+			nav.classList.remove('opened');
+		  } else {
+			nav.classList.add('opened');
+		  }
+		})
+	  </script>
+</body>
+</html>
+
