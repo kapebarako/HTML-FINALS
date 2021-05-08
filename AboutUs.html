@@ -95,6 +95,8 @@
 </head>
 <body>
     <link rel="stylesheet" type="text/css" href="fm_landing_css.css">
+    <link href="jsword/aos.css" rel="stylesheet">
+    <script src="jsword/aos.js"></script>
     <!--SURNAME, FIRSTNAME-->
     <!--DATE-->
     <div id="wrap">
@@ -135,7 +137,6 @@
 
 	<h1>MEET THE TEAM</h1>
 	<hr class="line">
-
 	<div class="parent">
 		<div class="child container" style="margin-left:50px;">
 			<img src="faye/pictures/pog.jpg" alt="Avatar" class="avatar">
@@ -184,7 +185,9 @@
 	</ul>
 	<br>
 
-	<p>We are a group of developers and designers inspired to create a safe
+	<div class="flex-center position-ref full-height">
+                        <div class="my-auto px-0.5 mr-0.5 aos-init" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-sine">
+						<p class="section-text">We are a group of developers and designers inspired to create a safe
 	haven for self-improvement and mental health.</p>
 
 	<h3>Embark on a meaningful JOURNEY with us</h3>
@@ -192,9 +195,9 @@
 	<hr class="yline">
 	<p><b>At FinerMinds, we believe in inspiring everyone to become their very BEST version.
 	Our mission and vision<br> is to give hope and learnings by sharing stories and experiences of people who have
-	improved themselves. </b></p>
+	improved themselves.</b></p>
 	<hr class="yline">
-	<p class="quote" style="text-align:center"><i><b>"Improvement will always be different from one another,
+	<p class="section-text"><i><b>"Improvement will always be different from one another,
 	but the structure <br> of improving oneself has an identity that all of us could learn from."</b></i></p>
 	<br><br>
 
@@ -220,5 +223,17 @@
 		  }
 		})
 	  </script>
+
+	   <script>
+            AOS.init();
+
+            $(function () {
+                $(document).scroll(function () {
+                    var $nav = $("#nav");
+                    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+                });
+            });
+        </script>
+
 </body>
 </html>
