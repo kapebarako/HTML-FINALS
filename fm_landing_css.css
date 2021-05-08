@@ -177,7 +177,7 @@ nav .dropdown.show .dropdown-menu {
 }
 nav .dropdown-item {
 	display: block;
-	padding: 0 1.5em;
+	padding: 0 1em;
 	font-size: 18px;
     font-weight: bolder;
 	color: #0c0b3d;
