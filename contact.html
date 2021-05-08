@@ -1,0 +1,189 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Montserrat&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Contact Us</title>
+    <style type= "text/css">
+	textarea{
+		resize:none;
+	}
+	input:focus, textarea:focus{
+		border: 2px solid #62B8FF;
+		box-shadow: 0px 0px 5px #62B8FF;
+		
+	}
+	button{
+		font-family: DM Sans;
+		font-weight: bold;
+		font-size: large;
+		color:#0c185a;
+		background-color:#ffc70f;
+		text-decoration: none;
+		padding: 1em 1.5em;
+		cursor: default;
+		border:none;
+	}
+
+	button:hover{
+		background-color: #e9b715;
+		color: #1b2a7e;
+	}
+	.first-div{
+		text-align:center;
+		float:left;
+		width: 60%;
+	}
+	.second-div{
+		float:right;
+		width:30%;
+		margin: 0 30px 0 10px; 
+		text-align:center;
+	}
+	.header-banner{
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/contact.png");
+		height: 400px;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	ul.contact{
+		
+	}
+	#address{
+		list-style-image: url('images/loc.jpg');
+	}
+	#phone{
+		list-style-image: url('images/tel.png');
+	}
+	#email{
+		list-style-image: url('images/email.png');
+	}
+	#address,#phone,#email{
+		text-align:left;
+		text-indent:25px;
+	}
+	.icon{
+		height: 40px;
+		border-radius:10px;
+		float:center;
+	}
+
+    </style>
+</head>
+
+<body>
+    <link rel="stylesheet" type="text/css" href="fm_landing_css.css">   
+    <div id="wrap">
+      <nav> 
+        <div>
+          <img class="logo" src="images/logo.png"/>
+        </div>
+        <button type="button" class="btn-hamburger" data-action="nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index.html">Home</a></li>
+          <li class="nav-item dropdown">
+            <a href="#" data-action="dropdown-toggle">About</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="aboutheblog.html">the Blog</a>
+              <a class="dropdown-item" href="AboutUs.html">the Team</a>
+            </div>
+          </li>
+          <li class="nav-item"><a href="articles.html">Self improvement articles</a></li>
+          <li class="nav-item"><a href="#">Self help books</a></li>
+          <li class="nav-item active"><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+	<br><br>
+	
+	<div class="header-banner">
+        <div class="hero-text">
+          <h1 style="font-size:50px">Contact Us</h1>
+		  <p>We'd love to HEAR from you!</p>
+        </div>
+    </div>
+	<br><br>
+	
+    <div class="first-div">
+		<br>
+		<h1 style="font-size:30px;">Send Us a Message</h1>
+		<hr class="line"><br>
+		<form method="#" action="#">
+			<fieldset>
+				<p>
+					<input type="text" name="name" placeholder="Name" maxlength="50" size="50" required>
+				</p>
+				<p>
+					<input type="text" name="email" placeholder="Email" maxlength="50" size="50" required>
+				</p>
+				<p>
+					<input type="text" name="subject" placeholder="Subject" size="50" maxlength="50">
+				</p>
+				<p>
+					<textarea rows="10" cols="51" placeholder="Message" required></textarea>
+				</p>
+				<button type="submit">Submit</button><br><br>
+			</fieldset>
+		</form>
+		
+	</div>
+	<br>
+	
+	<div class="second-div">
+		
+		<h2 style="font-size:24px;">Contact Information</h2>
+		<hr class="line2"><br>
+		<ul class="contact">
+			<li id="address">Recto Ave., Sampaloc, Manila, 1008</li>
+			<li id="phone">+63 (02)8-953-XXXX</li>
+			<li id="email">info@finerminds.org</li>
+		</ul>
+		<br>
+		<h2 style="font-size:24px;">Connect with FinerMinds</h2>
+		<hr class="line2"><br>
+			<div id="icons">
+				<a href="#"><img src="images/fb.png" class="icon"/>
+				<a href="#"><img src="images/twitter.png" class="icon"/>
+				<a href="#"><img src="images/in.png" class="icon"/>
+				<a href="#"><img src="images/youtube.png" class="icon"/>
+				<a href="#"><img src="images/ig.jpg" class="icon"/>
+			</div>
+		</ul>
+		
+	</div>
+		
+    <br><br>
+	
+    <script>
+      let nav = document.querySelector('nav');
+      let dropdown = nav.querySelector('.dropdown');
+      let dropdownToggle = nav.querySelector("[data-action='dropdown-toggle']");
+      let navToggle = nav.querySelector("[data-action='nav-toggle']");
+
+      dropdownToggle.addEventListener('click', () => {
+        if (dropdown.classList.contains('show')) {
+          dropdown.classList.remove('show');
+        } else {
+          dropdown.classList.add('show');
+        }
+      })
+
+      navToggle.addEventListener('click', () => {
+        if (nav.classList.contains('opened')) {
+          nav.classList.remove('opened');
+        } else {
+          nav.classList.add('opened');
+        }
+      })
+    </script>
+</body>
+</html>
