@@ -1,15 +1,14 @@
 <!DOCTYPE html> 
 <html lang="en">
 <head>
-	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="https://www.tonyrobbins.com/wp-content/themes/tonyrobbins2016/theme.css?v=20190925">
+    <link rel="stylesheet" type="text/css" href="https://www.tonyrobbins.com/wp-content/themes/tonyrobbins2016/theme.css?v=20190925">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Montserrat&family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Montserrat&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Montserrat&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>FinerMinds</title>
     <style type= "text/css">
         .header-banner {
@@ -48,10 +47,33 @@
           </li>
           <li class="nav-item"><a href="articles.html">Self improvement articles</a></li>
           <li class="nav-item active"><a href="selfhelpbooks.html">Self help books</a></li>
-          <li class="nav-item"><a href="contact.html">Contact</a></li>
+          <li class="nav-item"><a href="#">Contact</a></li>
         </ul>
       </nav>
   <br><br>
+
+  <script>
+  let nav = document.querySelector('nav');
+  let dropdown = nav.querySelector('.dropdown');
+  let dropdownToggle = nav.querySelector("[data-action='dropdown-toggle']");
+  let navToggle = nav.querySelector("[data-action='nav-toggle']");
+
+  dropdownToggle.addEventListener('click', () => {
+    if (dropdown.classList.contains('show')) {
+      dropdown.classList.remove('show');
+    } else {
+      dropdown.classList.add('show');
+    }
+  })
+
+  navToggle.addEventListener('click', () => {
+    if (nav.classList.contains('opened')) {
+      nav.classList.remove('opened');
+    } else {
+      nav.classList.add('opened');
+    }
+  })
+</script>
 
     <div class="header-banner">
         <div class="hero-text">
@@ -73,12 +95,12 @@
                 <section class="main-content top-books">
                     <h2>FinerMinds Recommends These Books</h>
                     <BR><BR>
-                   	<div class="top-book col-md-12">
+                    <div class="top-book col-md-12">
                     <div class="book-wrapper">
-                    <img width="333" height="499" src="books images/faye/Own Your Anxiety.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" />                  					
+                    <img width="333" height="499" src="books images/faye/Own Your Anxiety.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" />                                    
                     <div class="desc-wrapper">
                     <h3>Own Your Anxiety</h3>
-                  	<p class="small books-category">by Julian Brass 
+                    <p class="small books-category">by Julian Brass 
                     <a title="confidence" href="#">Confidence</a>
                     </p>
                     <p class="book-desc"><p>Author and anxiety coach Julian Brass helps people all over the world own anxiety by guiding them toward empowering, natural tools to redirect that raw...</p>
@@ -88,9 +110,9 @@
                 </div>
             </div>    
 
-        			<div class="top-book col-md-12">
+                    <div class="top-book col-md-12">
                     <div class="book-wrapper">
-                    <img width="333" height="499" src="books images/faye/be calm.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" />                  					
+                    <img width="333" height="499" src="books images/faye/be calm.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" />                                     
                     <div class="desc-wrapper">
                     <h3>Be Calm</h3>
                     <p class="small books-category">by Jill P. Weber
@@ -108,7 +130,7 @@
                     <div class="desc-wrapper">
                     <h3>The Subtle Art of Not Giving a F*ck</h3>
                     <p class="small books-category">by Mark Manson 
-                   	<a title="self-help" href="#">Self Help</a>                                                             
+                    <a title="self-help" href="#">Self Help</a>                                                             
                     </p>
                     <p class="book-desc"><p>In this generation-defining self-help guide, a superstar blogger cuts through the crap to show us how to stop trying to be "positive" all the time so that we can truly become...</p>
                     <a class="btn-outline" href="">Learn More</a>
@@ -160,7 +182,7 @@
                 </div>
             </div>
 
-            		<div class="top-book col-md-12">
+                    <div class="top-book col-md-12">
                     <div class="book-wrapper">
                     <img width="333" height="499" src="books images/erlan/atomic habits.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" />                                     
 
@@ -176,7 +198,7 @@
                 </div>
             </div>
 
-              		<div class="top-book col-md-12">
+                    <div class="top-book col-md-12">
                     <div class="book-wrapper">
                     <img width="333" height="499" src="books images/erlan/every thing is fck.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" />                                     
 
@@ -192,7 +214,7 @@
                 </div>
             </div>
 
-            		<div class="top-book col-md-12">
+                    <div class="top-book col-md-12">
                     <div class="book-wrapper">
                     <img width="333" height="499" src="books images/erlan/7 Habits of Highly Effective People.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" />                                     
 
@@ -208,7 +230,7 @@
                 </div>
             </div>
 
-                	<div class="top-book col-md-12">
+                    <div class="top-book col-md-12">
                     <div class="book-wrapper">
                     <img width="333" height="499" src="books images/mark/Why We Do What We Do.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt=""/>                                                       
                     <div class="desc-wrapper">
@@ -223,7 +245,7 @@
                 </div>
             </div>
 
-            		<div class="top-book col-md-12">
+                    <div class="top-book col-md-12">
                     <div class="book-wrapper">
                     <img width="333" height="499" src="books images/mark/permission to feel.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt=""/>                                                       
                     <div class="desc-wrapper">
@@ -238,7 +260,7 @@
                 </div>
             </div>
 
-            		<div class="top-book col-md-12">
+                    <div class="top-book col-md-12">
                     <div class="book-wrapper">
                     <img width="333" height="499" src="books images/mark/Ikigai.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt=""/>                                                       
                     <div class="desc-wrapper">
@@ -251,10 +273,11 @@
                     <a class="btn" target="_blank" href="https://www.amazon.com/Ikigai-Japanese-Secret-Long-Happy/dp/0143130722">BUY ON AMAZON</a>
                     </div>
                 </div>
-            </div>                                                                                                     
-<h2>More Popular Titles</h2>
+            </div>       
+
+<h2>More Popular Titles</h2> 
 <section id="popular-books">
-    <div class="row books-slider">            
+    <div class="row books-slider">           
     <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
                                         <div class="pop-wrapper">
                                             <a href="https://www.tonyrobbins.com/books/mating-in-captivity/"><img width="328" height="499" src="https://cdnwp.tonyrobbins.com/wp-content/uploads/2020/03/Mating-in-Captivity.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" /></a>
@@ -305,8 +328,9 @@
                                             <a href="https://www.tonyrobbins.com/books/fire-child-water-child/"><img width="333" height="499" src="https://cdnwp.tonyrobbins.com/wp-content/uploads/2020/03/fire-child-water-child.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" /></a>
                                         </div>
                                     </div>
-                                    							 	<div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                                                    <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
                                 
                     </div>
                 </section>
+</body>              
 </html>
