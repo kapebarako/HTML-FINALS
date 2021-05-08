@@ -264,3 +264,7 @@ nav.opened .btn-hamburger span:nth-child(3) {
 		display: block;
 	}
 }
+
+.btn:hover{
+	color:#ffc70f;
+}
