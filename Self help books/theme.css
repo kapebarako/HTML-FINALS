@@ -1,4 +1,3 @@
- .page-coaching{color: #000;}
  .page-coaching #background::before{background: transparent;}
  .page-coaching h5, .page-coaching .h5 {
  	font-size: 25px;
@@ -49,7 +48,6 @@
 	font-family: "proxima_nova_regular", "Helvetica", san-serif;
  	background: #2bb6d4 none repeat scroll 0 0;
  	border: 2px solid #2bb6d4;
- 	color: #ffffff;
  	font-size: 12px;
  	font-weight: 600;
  	letter-spacing: 0.1em;
@@ -1178,12 +1176,13 @@ blockquote p {
 
 .feeding-america h3 {
 	font-family: "proxima_nova_regular", "Helvetica", san-serif;
-	font-weight: 700;
 	font-size: 20px;
 	line-height: 26px;
 	text-transform: uppercase;
 	margin: 0 auto 32px auto;
 	max-width: 310px;
+	color:#fdc819;
+    font-weight: bolder;
 }
 
 .feeding-america p {
@@ -1752,6 +1751,8 @@ blockquote p {
 	.feeding-america h3 {
 		font-size: 18px;
 		line-height: 22px;
+		color:#fdc819;
+    	font-weight: bolder;
 	}
 
 	.feeding-america h2 {
@@ -1791,6 +1792,7 @@ blockquote p {
 	font-family: "tungsten-medium", "Helvetica", san-serif;
 	font-size: 50px;
 	letter-spacing: 2px;
+	color:#fdc819;
 }
 
 .event p {
@@ -2898,6 +2900,8 @@ blockquote p {
 	}
 	.event h3 {
 		margin-bottom: 13px;
+		color:#fdc819;
+    	font-weight: bolder;
 	}
 	.event em {
 		margin-bottom: 15px;
@@ -3282,6 +3286,8 @@ blockquote p {
 	.event h3 {
 		font-size: 27px;
 		line-height: 1.12;
+		color:#fdc819;
+    	font-weight: bolder;
 	}
 	.section-podcasts h5 {
 		margin-bottom: 34px;
@@ -6370,6 +6376,8 @@ li.feature-teritary {
 /*Style guide 7/27/2017 */
 h2, h3, h4, h5, h6, h7 {
     letter-spacing: 1px;
+    color:#fdc819;
+    font-weight: bolder;
 }
 h1.content{
     font-size:48px;
@@ -7609,8 +7617,9 @@ h1.seo_title{
     font-weight: bold;
     line-height: 1.3;
     letter-spacing: 1px;
-    color: #191919;
     margin: 0 0 9px;
+    color:#fdc819;
+    font-weight: bolder;
 }
 .top-books .top-book p{
     width: 100%;
@@ -7939,6 +7948,8 @@ h1.seo_title{
     font-weight: bold;
     font-style: italic;
     line-height: 1.73;
+    color:#fdc819;
+
 }
 #tony-recomends p{
     font-size: 18px;
@@ -7976,7 +7987,8 @@ h1.seo_title{
     width: 100%;
     font-size: 18px;
     font-weight: 600;
-    color: #14aecf;
+    color:#fdc819;
+    font-weight: bolder;
 }
 .sim-book-wrapper .book-price{
     font-size: 18px;
@@ -8008,12 +8020,12 @@ h1.seo_title{
     }
     #tony-recomends h3{
         font-size: 24px;
-        font-weight: bold;
+        font-weight: bolder;
         font-stretch: normal;
         font-style: italic;
         line-height: 1.92;
         letter-spacing: normal;
-        color: #191919;
+        color:#fdc819;
         text-transform: unset;
     }
     #similar-books .row {
@@ -8071,7 +8083,8 @@ h1.seo_title{
   	font-stretch: normal;
   	line-height: normal;
   	letter-spacing: 0.5px;
-  	color: #000000;
+  	color:#fdc819;
+    font-weight: bolder;
 }
 /* ------------------------------------------------------------ *\
 	2 columns section with images
