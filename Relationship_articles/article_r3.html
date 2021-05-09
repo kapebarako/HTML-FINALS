@@ -1,0 +1,152 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Montserrat&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>FinerMinds</title>
+    <style type= "text/css">
+    .container {
+        width: 90%;
+        height: 100px;
+        margin: auto;
+        padding: 10px;
+        top:-100px;
+    }
+
+    .one {
+        width: 30%;
+        height: 250px;
+        float: left;
+        margin: 0 35px 50px 0;
+    }
+
+    .two {
+        margin-left: 15%;
+        height: 450px;
+        margin: 0 30px 70px 0;
+        overflow: hidden;
+    }
+
+    b{
+        color: #fdc819;
+    }
+
+    </style>
+</head>
+
+<body>
+    <link rel="stylesheet" type="text/css" href="fm_landing_css.css">   
+    <div id="wrap">
+        <nav>
+          <div>
+            <img class="logo" src="images/logo.png"/>
+          </div>
+          <button type="button" class="btn-hamburger" data-action="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html">Home</a></li>
+            <li class="nav-item dropdown">
+              <a href="#" data-action="dropdown-toggle">About</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="aboutheblog.html">the Blog</a>
+                <a class="dropdown-item" href="AboutUs.html">the Team</a>
+              </div>
+            </li>
+            <li class="nav-item active"><a href="articles.html">Self improvement articles</a></li>
+            <li class="nav-item"><a href="selfhelpbooks.html">Self help books</a></li>
+            <li class="nav-item"><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+    <br><br><br>
+
+    <hr class="line3">
+    <h1 style="text-align: left; margin-left:30px;">How to Have a Better Relationship</h1>
+    <h5 style="text-indent: 30px;">Mark Conlan <b> || </b> August 4, 2011</h5>
+    <hr class="line3">
+    <br>
+    <div class="right"><img src="images/r3_1.png" width="500px" style="margin:0 20px;"></div>
+    <div class="center" style="text-align:justify; margin:0 50px;">
+        <h4>Can you spot a good relationship? Of course nobody knows what really goes on between any couple, but decades of scientific research into love, sex and relationships have taught us that a number of behaviors can predict when a couple is on solid ground or headed for troubled waters. Good relationships don’t happen overnight.</h4>
+	They take commitment, compromise, forgiveness and most of all — effort. Keep reading for 
+	the latest in relationship science, fun quizzes and helpful tips to help you build a stronger 
+	bond with your partner. 
+    </div>
+    <br><br>
+    <div class="container">
+
+        <div class="one" style="text-align:justify;">
+            <hr class="line2">
+                <h1>"</h1><h5>It’s natural for humans to want to feel needed, and like they’re part of something bigger.</h5><h1>"</h1>
+            <hr class="line2">
+        </div> 
+        
+        <div class="two">
+            Falling in love is the easy part. 
+			The challenge for couples is how to rekindle the fires of romance from 
+			time to time and cultivate the mature, trusting love that is the hallmark 
+			of a lasting relationship.  Terry Hatkoff, a California State University sociologist, has created a love scale that identifies six distinct 
+			types of love found in our closest relationships. 
+			<ul>
+				<li><b>Romantic:</b> Based on passion and sexual attraction </li>
+				<li><b>Best Friends:</b> Fondness and deep affection </li>
+				<li><b>Logical:</b> Practical feelings based on shared values, financial goals, religion etc.  </li>
+				<li><b>Playful:</b> Feelings evoked by flirtation or feeling challenged </li>
+				<li><b>Possessive:</b> Jealousy and obsession  </li>
+				<li><b>Unselfish:</b> Nurturing, kindness, and sacrifice  </li>
+				
+				
+			</ul>  
+        </div>
+
+    </div> 
+    <br><br><br><br><br><br><br><br><br><br>
+    <div class="left"><img src="images/r3_2.png" width="500px" style="margin:0 20px;"></div>
+    <div class="center" style="text-align:justify; margin:0 50px;">
+        Understanding what makes your partner feel loved can help you navigate conflict and put romance back into your relationship. 
+		You and your partner can take the Love Style quiz from Dr. Hatkoff 
+		and find out how each of you defines love. If you learn your partner 
+		tends toward jealousy, make sure you notice when someone is flirting 
+		with him or her. If your partner is practical in love, notice the many 
+		small ways he or she shows love by taking care of everyday needs.
+		The psychology professor Elaine Hatfield has suggested 
+		that the love we feel early in a relationship is different 
+		than what we feel later. Early on, love is <b>“passionate,”</b> 
+		meaning we have feelings of intense longing for our mate. 
+		Longer-term relationships develop <b>“companionate love,”</b> 
+		which can be described as a deep affection, and strong feelings of commitment and intimacy. 
+    </div>
+    <br><br><br>
+    </div>
+    <script>
+		let nav = document.querySelector('nav');
+		let dropdown = nav.querySelector('.dropdown');
+		let dropdownToggle = nav.querySelector("[data-action='dropdown-toggle']");
+		let navToggle = nav.querySelector("[data-action='nav-toggle']");
+  
+		dropdownToggle.addEventListener('click', () => {
+		  if (dropdown.classList.contains('show')) {
+			dropdown.classList.remove('show');
+		  } else {
+			dropdown.classList.add('show');
+		  }
+		})
+  
+		navToggle.addEventListener('click', () => {
+		  if (nav.classList.contains('opened')) {
+			nav.classList.remove('opened');
+		  } else {
+			nav.classList.add('opened');
+		  }
+		})
+	  </script>
+</body>
+</html>
+
