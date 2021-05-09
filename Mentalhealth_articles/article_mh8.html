@@ -1,0 +1,149 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Montserrat&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>FinerMinds</title>
+    <style type= "text/css">
+    .container {
+        width: 90%;
+        height: 100px;
+        margin: auto;
+        padding: 10px;
+        top:-100px;
+    }
+
+    .one {
+        width: 30%;
+        height: 250px;
+        float: left;
+        margin: 0 35px 30px 0;
+    }
+
+    .two {
+        margin-left: 15%;
+        height: 150px;
+        margin: 0 30px 70px 0;
+    }
+
+    b{
+        color: #fdc819;
+    }
+
+    </style>
+</head>
+
+<body>
+    <link rel="stylesheet" type="text/css" href="../fm_landing_css.css">   
+    <div id="wrap">
+        <nav>
+          <div>
+            <img class="logo" src="../images/logo.png"/>
+          </div>
+          <button type="button" class="btn-hamburger" data-action="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul class="nav-menu">
+            <li class="nav-item"><a href="../index.html">Home</a></li>
+            <li class="nav-item dropdown">
+              <a href="#" data-action="dropdown-toggle">About</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="../aboutheblog.html">the Blog</a>
+                <a class="dropdown-item" href="../AboutUs.html">the Team</a>
+              </div>
+            </li>
+            <li class="nav-item active"><a href="../articles.html">Self improvement articles</a></li>
+            <li class="nav-item"><a href="../selfhelpbooks.html">Self help books</a></li>
+            <li class="nav-item"><a href="../contact.html">Contact</a></li>
+          </ul>
+        </nav>
+    <br><br><br>
+
+    <hr class="line3">
+    <h1 style="text-align: left; margin-left:30px;">How Does Sleep Affect Mental Health?</h1>
+    <h5 style="text-indent: 30px;"> Kendra Cherry<b> || </b> February 24, 2020</h5>
+    <hr class="line3">
+    <br>
+    <div class="right"><img src="../images/mh8_1.png" width="500px" style="margin:0 20px;"></div>
+    <div class="center" style="text-align:justify; margin:0 50px;">
+        <h4>The Relationship Between Sleep and Mental Health</h4>
+        Sleep deprivation can leave you feeling irritable and 
+		exhausted in the short-term, but it can also have serious 
+		long-term health consequences as well.Lack of sleep is linked to a 
+		number of unfavorable health consequences including heart disease, 
+		type 2 diabetes, and depression. Research suggests that the relationship between sleep and mental 
+		health is complex. While sleep has long been known to be a consequence 
+		of many psychiatric conditions, more recent views suggest that sleep 
+		can also play a causal role in both the development and maintenance of 
+		different mental health problems. In other words, sleep problems can lead to changes in mental health, but mental 
+		health conditions can also worsen problems with sleep. 
+	
+    </div>
+
+    <div class="container">
+
+        <div class="one">
+            <hr class="line2">
+                <h1>"</h1><h5> If lifestyle changes do not relieve sleep problems, 
+				your doctor may recommend psychotherapy and medications. 
+				</h5><h1>"</h1>
+            <hr class="line2">
+        </div>
+
+        <div class="two" style="text-align:justify;">
+		The recommendations for treating poor sleep or sleep disturbances are generally 
+		the same whether or not you have a psychiatric condition. Preliminary approaches 
+		usually focus on lifestyle changes you can make that can help you get a better 
+		night’s sleep. Avoiding sleep interrupters (such as caffeine, nicotine, and alcohol) 
+		and practicing good sleep habits are examples of lifestyle changes you can make that can help.
+		In addition to seeking help from medical professionals, there are also steps that you can take 
+		on your own to improve your sleep and well-being. Having good sleep hygiene, or practices that 
+		support sleep, are critical to staying rested and avoiding daytime sleepiness. 
+        </div> 
+
+    </div> 
+    <br><br><br><br><br><br><br><br>
+    <div class="left"><img src="../images/mh8_2.jpg" width="500px" style="margin:0 20px;"></div>
+    <div class="center" style="text-align:justify; margin:0 50px;">
+       The negative effects of poor sleep are well-documented, including the profound impact on mental
+	   health and emotional well-being. Poor sleep may often be a symptom or consequence of an existing 
+	   psychological condition, but sleep problems are also thought to cause or contribute to the onset
+	   of different mental disorders including depression and anxiety.
+	   For this reason, addressing sleep problems early-on is important to help protect your overall health 
+	   and wellness. Making lifestyle changes that promote good sleep can help, but talk to your doctor if 
+	   your sleep problems persist. An underlying sleep disorder or a medical condition might be playing a 
+	   role in your sleep issues.
+    </div>
+    <br><br><br>
+    </div>
+    <script>
+		let nav = document.querySelector('nav');
+		let dropdown = nav.querySelector('.dropdown');
+		let dropdownToggle = nav.querySelector("[data-action='dropdown-toggle']");
+		let navToggle = nav.querySelector("[data-action='nav-toggle']");
+  
+		dropdownToggle.addEventListener('click', () => {
+		  if (dropdown.classList.contains('show')) {
+			dropdown.classList.remove('show');
+		  } else {
+			dropdown.classList.add('show');
+		  }
+		})
+  
+		navToggle.addEventListener('click', () => {
+		  if (nav.classList.contains('opened')) {
+			nav.classList.remove('opened');
+		  } else {
+			nav.classList.add('opened');
+		  }
+		})
+	  </script>
+</body>
+</html>
