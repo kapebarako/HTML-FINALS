@@ -1,0 +1,149 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Montserrat&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>FinerMinds</title>
+    <style type= "text/css">
+    .container {
+        width: 90%;
+        height: 100px;
+        margin: auto;
+        padding: 10px;
+        top:-100px;
+    }
+
+    .one {
+        width: 30%;
+        height: 250px;
+        float: left;
+        margin: 0 35px 30px 0;
+    }
+
+    .two {
+        margin-left: 15%;
+        height: 150px;
+        margin: 0 30px 70px 0;
+    }
+
+    b{
+        color: #fdc819;
+    }
+
+    </style>
+</head>
+
+<body>
+    <link rel="stylesheet" type="text/css" href="fm_landing_css.css">   
+    <div id="wrap">
+        <nav>
+          <div>
+            <img class="logo" src="images/logo.png"/>
+          </div>
+          <button type="button" class="btn-hamburger" data-action="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html">Home</a></li>
+            <li class="nav-item dropdown">
+              <a href="#" data-action="dropdown-toggle">About</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="aboutheblog.html">the Blog</a>
+                <a class="dropdown-item" href="AboutUs.html">the Team</a>
+              </div>
+            </li>
+            <li class="nav-item active"><a href="articles.html">Self improvement articles</a></li>
+            <li class="nav-item"><a href="selfhelpbooks.html">Self help books</a></li>
+            <li class="nav-item"><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+    <br><br><br>
+
+    <hr class="line3">
+    <h1 style="text-align: left; margin-left:30px;">The coronavirus (COVID19) pandemic's impact on mental health</h1>
+    <h5 style="text-indent: 30px;">Javed B, Sarwer A, Soto EB, Mashwani ZR <b> || </b> May 3, 2020</h5>
+    <hr class="line3">
+    <br>
+    <div class="right"><img src="images/mh3.jpg" width="500px" style="margin:0 20px;"></div>
+    <div class="center" style="text-align:justify; margin:0 50px;">
+        <h4>A pandemic is not just a medical phenomenon; it affects individuals and society and causes disruption, anxiety, stress, stigma, and xenophobia. </h4>
+             The behavior of an individual as a unit of society or a community has marked effects on the dynamics of a pandemic 
+			 that involves the level of severity, degree of flow, and aftereffects.
+			 1 Rapid humantohuman transmission of the SARSCoV2 resulted in the enforcement of 
+			 regional lockdowns to stem the further spread of the disease. Isolation, social distancing, 
+			 and closure of educational institutes, workplaces, and entertainment venues 
+			 consigned people to stay in their homes to help break the chain of transmission
+    </div>
+
+    <div class="container">
+
+        <div class="one">
+            <hr class="line2">
+                <h1>"</h1><h5>It is okay to have depression, it is okay to have anxiety, 
+				and it is okay to have an adjustment disorder. We need to improve the conversation. We all have mental health in 
+				the same way we all have physical health.</h5><h1>"</h1>
+            <hr class="line2">
+        </div>
+
+        <div class="two" style="text-align:justify;">
+           Children, away from their school, friends, and colleagues, staying at home can have many questions about the outbreak 
+		   and they look toward their parents or caregivers to get the answer. 
+		   Not all children and parents respond to stress in the same way.
+		   Kids can experience anxiety, distress, social isolation, and an abusive environment 
+		   that can have short or longterm effects on their mental health. Some common changes in children's behavior can be:		   
+	<ul>
+		<li>Excessive crying and annoying behavior</li>
+		<li>Increased sadness, depression, or worry</li>
+		<li>Difficulties with concentration and attention</li>
+		<li>Unexpected headaches and pain throughout their bodies</li>
+		
+	</ul> 
+        </div> 
+
+    </div> 
+    <br><br><br><br><br><br><br><br>
+    <div class="left"><img src="images/mh3_1.jpg" width="500px" style="margin:0 20px;"></div>
+    <div class="center" style="text-align:justify; margin:0 50px;">
+        To help offset negative behaviors, requires parents to remain calm, 
+		deal with the situation wisely, and answer all of the child's questions to 
+		the best of their abilities. Parents can take some time to talk to their children about 
+		the COVID19 outbreak and share some positive facts, figures, and information.  
+		Parents can also develop a home schedule that can help their children to keep up with their studies. 
+		Parents should show less stress or anxiety at their home as children perceive 
+		and feel negative energy from their parents. The involvement of parents in healthy activities with their children 
+		can help to reduce stress and anxiety and bring relief to the overall situation.
+    </div>
+    <br><br><br>
+    </div>
+    <script>
+		let nav = document.querySelector('nav');
+		let dropdown = nav.querySelector('.dropdown');
+		let dropdownToggle = nav.querySelector("[data-action='dropdown-toggle']");
+		let navToggle = nav.querySelector("[data-action='nav-toggle']");
+  
+		dropdownToggle.addEventListener('click', () => {
+		  if (dropdown.classList.contains('show')) {
+			dropdown.classList.remove('show');
+		  } else {
+			dropdown.classList.add('show');
+		  }
+		})
+  
+		navToggle.addEventListener('click', () => {
+		  if (nav.classList.contains('opened')) {
+			nav.classList.remove('opened');
+		  } else {
+			nav.classList.add('opened');
+		  }
+		})
+	  </script>
+</body>
+</html>
+
