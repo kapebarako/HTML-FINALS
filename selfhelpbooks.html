@@ -1,104 +1,355 @@
 <!DOCTYPE html> 
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://www.tonyrobbins.com/wp-content/themes/tonyrobbins2016/theme.css?v=20190925">
+
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Montserrat&family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>FinerMinds</title>
     <style type= "text/css">
-    .container {
-        width: 90%;
-        height: 100px;
-        margin: auto;
-        padding: 10px;
-        top:-100px;
+        .header-banner {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/selfdev.jpg");
+        height:400px;
+        text-align: center;
+        color: white;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
-
-    .one {
-        width: 30%;
-        height: 550px;
-        float: left;
-        margin: 0 35px 30px 0;
-    }
-
-    .two {
-        margin-left: 15%;
-        width:60%;
-        height: 560px;
-        margin: 0 30px 70px 0;
-        float:right;
-    }
-
-    b{
-        color: #fdc819;
-    }
-
     </style>
 </head>
-
 <body>
     <link rel="stylesheet" type="text/css" href="fm_landing_css.css">   
     <div id="wrap">
-        <nav>
-          <div>
-            <img class="logo" src="images/logo.png"/>
-          </div>
-          <button type="button" class="btn-hamburger" data-action="nav-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-          <ul class="nav-menu">
-            <li class="nav-item"><a href="index.html">Home</a></li>
-            <li class="nav-item dropdown">
-              <a href="#" data-action="dropdown-toggle">About</a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="aboutheblog.html">the Blog</a>
-                <a class="dropdown-item" href="AboutUs.html">the Team</a>
-              </div>
-            </li>
-            <li class="nav-item active"><a href="articles.html">Self improvement articles</a></li>
-            <li class="nav-item"><a href="selfhelpbooks.html">Self-help books</a></li>
-            <li class="nav-item"><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-    <br><br>
+      <nav>
+        <div>
+          <img class="logo" src="images/logo.png"/>
+        </div>
+        <button type="button" class="btn-hamburger" data-action="nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index.html">Home</a></li>
+          <li class="nav-item dropdown">
+            <a href="#" data-action="dropdown-toggle">About</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="aboutheblog.html">the Blog</a>
+              <a class="dropdown-item" href="AboutUs.html">the Team</a>
+            </div>
+          </li>
+          <li class="nav-item"><a href="articles.html">Self improvement articles</a></li>
+          <li class="nav-item active"><a href="selfhelpbooks.html">Self help books</a></li>
+          <li class="nav-item"><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+  <br><br>
 
+  <script>
+  let nav = document.querySelector('nav');
+  let dropdown = nav.querySelector('.dropdown');
+  let dropdownToggle = nav.querySelector("[data-action='dropdown-toggle']");
+  let navToggle = nav.querySelector("[data-action='nav-toggle']");
+
+  dropdownToggle.addEventListener('click', () => {
+    if (dropdown.classList.contains('show')) {
+      dropdown.classList.remove('show');
+    } else {
+      dropdown.classList.add('show');
+    }
+  })
+
+  navToggle.addEventListener('click', () => {
+    if (nav.classList.contains('opened')) {
+      nav.classList.remove('opened');
+    } else {
+      nav.classList.add('opened');
+    }
+  })
+</script>
+
+    <div class="header-banner">
+        <div class="hero-text">
+          <h1 style="font-size:50px">BOOKS RECOMMENDATION</h1>
+          <p><b>ENLIGHTENING<b> books to read</p>
+        </div>
+    </div>
+
+    <div class="center">
+        <br><br>
+        <h1>FinerMinds Recommends These Books</h1>
+        <hr class="line">
+
+<section id="main-content top-books">
     <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                 <section class="main-content top-books">
+                    <p></p>
+                    <div class="row">
+                                                        <div class="top-book col-md-6">
 
-        <div class="one">
-            <img src="books images/faye/Own Your Anxiety.jpg" width="300px" style="margin:10px;">
-        </div>
+                        <div class="book-wrapper">
+                        <img width="333" height="499" src="Self help books/books images/faye/Own Your Anxiety.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" />                                    
+                        <div class="desc-wrapper">
+                        <h3>Own Your Anxiety</h3>
+                        <p class="small books-category">by Julian Brass 
+                        <a title="confidence" href="#">Confidence</a>
+                        </p>
+                        <p class="book-desc"><p>Author and anxiety coach Julian Brass helps people all over the world own anxiety by guiding them toward empowering, natural tools to redirect that raw...</p>
+                        <center><a class="btn-outline" href="./../../Self help books/faye's book/book1.html">Learn More</a></center>
+                        <a class="btn" target="_blank" href="https://www.amazon.com/Own-Your-Anxiety-Simple-Channel/dp/1989025625/?tag=dotdashvwm-20&ascsubtag=4799301%7Cn52b59dc2cedb481c83c4c13f5c6f995206">BUY ON AMAZON</a>
+                        </div>
+                    </div>
+                </div> 
 
-        <div class="two" style="text-align:justify;">
-            <hr class="line2">
-            <h2 style="font-size: 32px;">Own Your Anxiety: 99 Simple Ways to Channel Your Secret Edge</h2>
-            <p>by Julian Brass</p>
-            <hr class="line2">
-            <br>
-            Author and anxiety coach Julian Brass helps people all over the world own anxiety 
-            by guiding them toward empowering, natural tools to redirect that raw, disruptive 
-            emotion into positive action. These tools, which are the foundation of his Own Anxiety 
-            method lead, to a redefined relationship with anxiety, taking it from negative and 
-            debilitative to positive and facilitative. Rather than trying to fight it, Brass 
-            encourages readers to consider anxiety a gift. Personal, personable, and highly motivating, 
-            the book offers practical lessons to overcome the effects of anxiety by owning it in three 
-            key areas of body, mind and soul.<br><br>
-            Combining medical research from the West and holistic philosophies from the East, the tips 
-            offer daily doses of inspiration. From guidance on how to schedule smarter to reduce stress, 
-            how to say no more often, and how to rein in the use of social media to advice about spreading 
-            love and playing more often, the book makes owning anxiety both accessible and fun. Warm, 
-            enthusiastic, and at times irreverent, Brass offers stories from his own life and shows from 
-            personal experience how to conquer anxiety. He is a coach of superlative positivity, encouraging 
-            readers to find the resources within to master anxiety toward a more fulfilling and healthier 
-            lifestyle.
-            <br><br><br>
-        </div>
-    </div> 
+                    <div class="top-book col-md-6">
+                    <div class="book-wrapper">
+                    <img width="351" height="499" src="Self help books/books images/faye/be calm.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" />                                     
+                    <div class="desc-wrapper">
+                    <h3>Be Calm</h3>
+                    <p class="small books-category">by Jill P. Weber
+                    <a title="confidence" href="#">Confidence</a></p>
+           
+                    <p class="book-desc"><p>If you suffer from anxiety, you may feel helpless to reduce your panic symptoms, avoidance behavior, or worried thoughts. Be Calm empowers you to...</p>
+                    <center><a class="btn-outline" href="">Learn More</a></center>
+                    <a class="btn" target="_blank" href="https://www.amazon.com/dp/1641522089?tag=dotdashvwm-20&linkCode=ogi&th=1&psc=1&ascsubtag=4799301%7Cn52b59dc2cedb481c83c4c13f5c6f995206">BUY ON AMAZON</a>
+                    </div>
+                </div>
+            </div>
+                    <div class="top-book col-md-6">
+                    <div class="book-wrapper">
+                    <img width="333" height="499" src="Self help books/books images/faye/The Subtle Art of Not Giving a Fck.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" />                                                        
+                    <div class="desc-wrapper">
+                    <h3>The Subtle Art of Not Giving a F*ck</h3>
+                    <p class="small books-category">by Mark Manson 
+                    <a title="self-help" href="#">Self Help</a>                                                             
+                    </p>
+                    <p class="book-desc"><p>In this generation-defining self-help guide, a superstar blogger cuts through the crap to show us how to stop trying to be...</p>
+                    <center><a class="btn-outline" href="">Learn More</a></center>
+                    <a class="btn" target="_blank" href="https://www.amazon.com/Subtle-Art-Not-Giving-Counterintuitive/dp/0062457713">BUY ON AMAZON</a>
+                    </div>
+                </div>
+            </div>
+            
+                    <div class="top-book col-md-6">
+                    <div class="book-wrapper">
+                    <img width="333" height="499" src="Self help books/books images/khaye/The 5-Minute Gratitude Journal.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" />                                                        
+                    <div class="desc-wrapper">
+                    <h3>The 5-Minute Gratitude Journal</h3>
+                    <p class="small books-category">by Sophia Godkin
+                    <a title="leadership" href="#">Self Help</a>                                                             
+                    </p>
+                    <p class="book-desc"><p>Happiness begins with gratitude―the feeling of appreciation for the people and experiences in our lives that have helped...</p>
+                    <center><a class="btn-outline" href="">Learn More</a></center>
+                    <a class="btn" target="_blank" href="https://www.amazon.com/5-Minute-Gratitude-Journal-Practice-Positivity/dp/1647397197/ref=pd_sbs_48?pd_rd_w=jgX2v&pf_rd_p=98101395-b70f-4a52-af63-8fac2c513e02&pf_rd_r=9SR8DADV6B3NG4QA0NTG&pd_rd_r=a637248c-97da-4c1e-ad41-5cdea8dfd5f7&pd_rd_wg=Uuvlh&pd_rd_i=1647397197&psc=1">BUY ON AMAZON</a>
+                    </div>
+                </div>
+            </div>
+                    <div class="top-book col-md-6">
+                    <div class="book-wrapper">
+                    <img width="333" height="499" src="Self help books/books images/khaye/Best Self.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" />                                                        
+                    <div class="desc-wrapper">
+                    <h3>Best Self: Be You, Only Better</h3>
+                    <p class="small books-category">by Dr. Phil McGraw 
+                    <a title="self-help" href="#">Self Help</a>                                                             
+                    </p>
+                    <p class="book-desc"><p>Ask yourself…are you truly who you want to be? Is this the life you really want? Are you living each day as your best...</p>
+                    <center><a class="btn-outline" href="">Learn More</a></center>
+                    <a class="btn" target="_blank" href="https://www.amazon.com/Best-Self-You-Only-Better/dp/0062911732/ref=pd_sbs_17?pd_rd_w=AN8Jl&pf_rd_p=98101395-b70f-4a52-af63-8fac2c513e02&pf_rd_r=X16DFB4C6MQT5G1BNW0R&pd_rd_r=8fcf6e86-f757-40db-a19f-9321219cf52e&pd_rd_wg=T8gzi&pd_rd_i=0062911732&psc=1#customerReviews">BUY ON AMAZON</a>
+                    <p></p>
+                    </div>
+                </div>
+            </div>
+                    <div class="top-book col-md-6">
+                    <div class="book-wrapper">
+                    <img width="333" height="499" src="Self help books/books images/khaye/self confidence.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" />                                     
 
-</body>
+                    <div class="desc-wrapper">
+                    <h3>The Self Confidence Workbook</h3>
+                    <p class="small books-category">by Barbara Markway
+                    <a title="self-help" href="#">Confidence</a>                                                             
+                    </p>
+                    <p class="book-desc"><p>From facing your fears to practicing acceptance and self-compassion, The Self-Confidence Workbook offers...</p>
+                    <center><a class="btn-outline" href="">Learn More</a></center>
+                    <a class="btn" target="_blank" href="https://www.amazon.com/Self-Confidence-Workbook-Overcoming-Self-Esteem/dp/1641521481/ref=pd_sbs_29?pd_rd_w=AN8Jl&pf_rd_p=98101395-b70f-4a52-af63-8fac2c513e02&pf_rd_r=X16DFB4C6MQT5G1BNW0R&pd_rd_r=8fcf6e86-f757-40db-a19f-9321219cf52e&pd_rd_wg=T8gzi&pd_rd_i=1641521481&psc=1">BUY ON AMAZON</a>
+                    </div>
+                </div>
+            </div>
+
+                    <div class="top-book col-md-6">
+                    <div class="book-wrapper">
+                    <img width="333" height="499" src="Self help books/books images/erlan/atomic habits.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" />                                     
+
+                    <div class="desc-wrapper">
+                    <h3>Atomic Habits</h3>
+                    <p class="small books-category">by James Clear
+                    <a title="self-help" href="#">Goals</a>                                                             
+                    </p>
+                    <p class="book-desc"><p>No matter your goals, Atomic Habits offers a proven framework for improving - every day. James Clear, one of the world's leading experts on habit formation, reveals...</p>
+                    <center><a class="btn-outline" href="">Learn More</a></center>
+                    <a class="btn" target="_blank" href="https://www.amazon.com/Atomic-Habits-James-Clear-audiobook/dp/B07RFSSYBH/ref=sr_1_1?dchild=1&keywords=atomic+habits&qid=1620309875&s=books&sr=1">BUY ON AMAZON</a>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    </div>
+                </div>
+            </div>
+
+                    <div class="top-book col-md-6">
+                    <div class="book-wrapper">
+                    <img width="333" height="499" src="Self help books/books images/erlan/every thing is fck.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" />                                     
+
+                    <div class="desc-wrapper">
+                    <h3>Everything Is F*cked: A Book About Hope</h3>
+                    <p class="small books-category">by Mark Manson
+                    <a title="self-help" href="#">Motivation</a>                                                             
+                    </p>
+                    <p class="book-desc"><p>We live in an interesting time. Materially, everything is the best it’s ever been - we are...</p>
+                    <center><a class="btn-outline" href="">Learn More</a></center>
+                    <a class="btn" target="_blank" href="https://www.amazon.com/Everything-Is-F-cked-Mark-Manson-audiobook/dp/B07NXWC9V5/ref=sr_1_1?dchild=1&keywords=everything+is+fucked&qid=1620309925&s=audible&sr=1">BUY ON AMAZON</a>
+                    </div>
+                </div>
+            </div>
+
+                    <div class="top-book col-md-6">
+                    <div class="book-wrapper">
+                    <img width="333" height="499" src="Self help books/books images/erlan/7 Habits of Highly Effective People.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" />                                     
+
+                    <div class="desc-wrapper">
+                    <h3>The 7 Habits of Highly Effective People</h3>
+                    <p class="small books-category">by Stephen R. Covey
+                    <a title="self-help" href="#">Goals</a>                                                             
+                    </p>
+                    <p class="book-desc"><p>One of the most inspiring and impactful books ever written, The 7 Habits of Highly Effective...</p>
+                    <center><a class="btn-outline" href="">Learn More</a></center>
+                    <a class="btn" target="_blank" href="https://www.amazon.com/Habits-Highly-Effective-People-Powerful/dp/B0006IU4C0/ref=sr_1_1?crid=1J2WHTCQG8QFB&dchild=1&keywords=7+habits+of+highly+effective+people&qid=1620457520&s=audible&sprefix=7+habbit%2Caudible%2C368&sr=1">BUY ON AMAZON</a>
+                    </div>
+                </div>
+            </div>
+
+                    <div class="top-book col-md-6">
+                    <div class="book-wrapper">
+                    <img width="333" height="499" src="Self help books/books images/mark/Why We Do What We Do.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt=""/>                                                       
+                    <div class="desc-wrapper">
+                    <h3>Why We Do What We Do</h3>
+                    <p class="small books-category">by Edward L. Deci 
+                    <a title="leadership" href="#">Awareness</a>                                                             
+                    </p>
+                    <p class="book-desc"><p>If you reward your children for doing their homework, they will usually respond by getting it done...</p>
+                    <center><a class="btn-outline" href="">Learn More</a></center>
+                    <a class="btn" target="_blank" href="https://www.amazon.com/Why-We-What-Understanding-Self-Motivation/dp/0140255265">BUY ON AMAZON</a>
+                    </div>
+                </div>
+            </div>
+
+                    <div class="top-book col-md-6">
+                    <div class="book-wrapper">
+                    <img width="333" height="499" src="Self help books/books images/mark/permission to feel.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt=""/>                                                       
+                    <div class="desc-wrapper">
+                    <h3>Permission to Feel</h3>
+                    <p class="small books-category">by Marc Brackett  
+                    <a title="leadership" href="#">Awareness</a>                                                             
+                    </p>
+                    <p class="book-desc"><p>The mental well-being of children and adults is shockingly poor. Marc Brackett, author of Permission to Feel, knows why. And he knows what we can do...</p>
+                    <center><a class="btn-outline" href="">Learn More</a></center>
+                    <a class="btn" target="_blank" href="https://www.amazon.com/Permission-Feel-Unlocking-Emotions-Ourselves/dp/1250212847">BUY ON AMAZON</a>
+                    </div>
+                </div>
+            </div>
+
+                    <div class="top-book col-md-6">
+                    <div class="book-wrapper">
+                    <img width="333" height="499" src="Self help books/books images/mark/Ikigai.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt=""/>                                                       
+                    <div class="desc-wrapper">
+                    <h3>Ikigai</h3>
+                    <p class="small books-category">by Hector Garcia 
+                    <a title="leadership" href="#">Self Motivation</a>                                                             
+                    </p>
+                    <p class="book-desc"><p>According to the Japanese, everyone has an ikigai—a reason for living. And according to the residents of the Japanese village with the world’s longest-living people...</p>
+                    <center><a class="btn-outline" href="Self help books/mark's book/ikigai.html">Learn More</a></center>
+                    <a class="btn" target="_blank" href="https://www.amazon.com/Ikigai-Japanese-Secret-Long-Happy/dp/0143130722">BUY ON AMAZON</a>
+                    </div>
+                </div>
+            </div>     
+</section> 
+<br><br>
+
+<section id="popular-books">
+	<h2>More Popular Titles</h2>
+    <div class="row books-slider">           
+    <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+    									<br>
+                                        <div class="pop-wrapper">
+                                            <a href="https://www.tonyrobbins.com/books/mating-in-captivity/"><img width="328" height="499" src="https://cdnwp.tonyrobbins.com/wp-content/uploads/2020/03/Mating-in-Captivity.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" /></a>
+                                        </div>
+                                    </div>
+                                                                    <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                        <br>
+                                        <div class="pop-wrapper">
+                                            <a href="https://www.tonyrobbins.com/books/the-mastery-of-love/"><img width="351" height="499" src="https://cdnwp.tonyrobbins.com/wp-content/uploads/2020/03/the-mastery-of-love.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" /></a>
+                                        </div>
+                                    </div>
+                                                                    <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                        <br>                            	
+                                        <div class="pop-wrapper">
+                                            <a href="https://www.tonyrobbins.com/books/7-principles-for-making-marriages-work/"><img width="318" height="474" src="https://cdnwp.tonyrobbins.com/wp-content/uploads/2020/03/the-seven-principles-for-making-marriage-work.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" /></a>
+                                        </div>
+                                    </div>
+                                                                    <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                        <br>
+                                        <div class="pop-wrapper">
+                                            <a href="https://www.tonyrobbins.com/books/the-fourth-turning-an-american-prophecy-what-the-cycles-of-history-tell-us-about-americas-next-rendezvous-with-destiny/"><img width="331" height="499" src="https://cdnwp.tonyrobbins.com/wp-content/uploads/2020/03/the-fourth-turning-an-american-prophecy-what-the-cycles-of-history-tell-us-about-america%E2%80%99s-next-rendezvous-with-destiny.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" /></a>
+                                        </div>
+                                    </div>
+                                                                    <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                        <br>
+                                        <div class="pop-wrapper">
+                                            <a href="https://www.tonyrobbins.com/books/the-way-of-the-superior-man/"><img width="343" height="499" src="https://cdnwp.tonyrobbins.com/wp-content/uploads/2020/03/The-Way-of-the-Superior-Man.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" /></a>
+                                        </div>
+                                    </div>
+                                                                    <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                        <br>
+                                        <div class="pop-wrapper">
+                                            <a href="https://www.tonyrobbins.com/books/keys-to-kingdom/"><img width="297" height="499" src="https://cdnwp.tonyrobbins.com/wp-content/uploads/2020/03/keys-to-the-kingdom.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" /></a>
+                                        </div>
+                                    </div>
+                                        
+
+                                                                    <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                        <br>
+                                        <div class="pop-wrapper">
+                                            <a href="https://www.tonyrobbins.com/books/come-as-you-are/"><img width="333" height="499" src="https://cdnwp.tonyrobbins.com/wp-content/uploads/2020/03/come-as-you-are.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" /></a>
+                                        </div>
+                                    </div>
+                                                                    <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                        <br>
+                                        <div class="pop-wrapper">
+                                            <a href="https://www.tonyrobbins.com/books/long-walk-to-freedom-the-autobiography-of-nelson-mandela/"><img width="218" height="346" src="https://cdnwp.tonyrobbins.com/wp-content/uploads/2020/03/long-walk-to-freedom-the-autobiography-of-nelson-mandela.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" /></a>
+                                        </div>
+                                    </div>
+                                                                    <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                        <br>
+                                        <div class="pop-wrapper">
+                                            <a href="https://www.tonyrobbins.com/books/how-to-love/"><img width="333" height="499" src="https://cdnwp.tonyrobbins.com/wp-content/uploads/2020/03/how-to-love.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" /></a>
+                                        </div>
+                                    </div>
+                                                                    <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                        <br>
+                                        <div class="pop-wrapper">
+                                            <a href="https://www.tonyrobbins.com/books/fire-child-water-child/"><img width="333" height="499" src="https://cdnwp.tonyrobbins.com/wp-content/uploads/2020/03/fire-child-water-child.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" /></a>
+                                        </div>
+                                    </div>
+                                                                    <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                
+                    </div>
+                </section>
+</body>              
 </html>
