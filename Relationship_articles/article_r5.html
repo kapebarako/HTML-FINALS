@@ -1,0 +1,139 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Montserrat&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>FinerMinds</title>
+    <style type= "text/css">
+    .container {
+        width: 90%;
+        height: 100px;
+        margin: auto;
+        padding: 10px;
+        top:-100px;
+    }
+
+    .one {
+        width: 30%;
+        height: 250px;
+        float: left;
+        margin: 0 35px 50px 0;
+    }
+
+    .two {
+        margin-left: 15%;
+        height: 450px;
+        margin: 0 30px 70px 0;
+        overflow: hidden;
+    }
+
+    b{
+        color: #fdc819;
+    }
+
+    </style>
+</head>
+
+<body>
+    <link rel="stylesheet" type="text/css" href="../fm_landing_css.css">   
+    <div id="wrap">
+        <nav>
+          <div>
+            <img class="logo" src="../images/logo.png"/>
+          </div>
+          <button type="button" class="btn-hamburger" data-action="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul class="nav-menu">
+            <li class="nav-item"><a href="../index.html">Home</a></li>
+            <li class="nav-item dropdown">
+              <a href="#" data-action="dropdown-toggle">About</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="../aboutheblog.html">the Blog</a>
+                <a class="dropdown-item" href="../AboutUs.html">the Team</a>
+              </div>
+            </li>
+            <li class="nav-item active"><a href="../articles.html">Self improvement articles</a></li>
+            <li class="nav-item"><a href="../selfhelpbooks.html">Self help books</a></li>
+            <li class="nav-item"><a href="../contact.html">Contact</a></li>
+          </ul>
+        </nav>
+    <br><br><br>
+
+    <hr class="line3">
+    <h1 style="text-align: left; margin-left:30px;">The Science Behind Happy Relationships</h1>
+    <h5 style="text-indent: 30px;">SARAH TRELEAVEN.<b> || </b> JUNE 26, 2018</h5>
+    <hr class="line3">
+    <br>
+    <div class="right"><img src="../images/r5_1.jpg" width="500px" style="margin:0 20px;"></div>
+    <div class="center" style="text-align:justify; margin:0 50px;">
+        <h4>When it comes to relationships, most of us are winging it. 
+		We’re exhilarated by the early stages of love, but as we move onto the general 
+		grind of everyday life, personal baggage starts to creep in and we can find ourselves
+		floundering in the face of hurt feelings, emotional withdrawal, escalating conflict, 
+		insufficient coping techniques and just plain boredom.</h4>
+	There’s no denying it: making and keeping happy and healthy relationships is hard.
+But a growing field of research into relationships is increasingly providing science-based guidance into the habits of the healthiest, happiest couples — and how to make any struggling relationship better.
+    </div>
+    <br><br>
+    <div class="container">
+
+        <div class="one" style="text-align:justify;">
+            <hr class="line2">
+                <h1>"</h1><h5>The secret to loving relationships and to keeping them strong and vibrant over the years, to falling in love again and again, is emotional responsiveness</h5><h1>"</h1>
+            <hr class="line2">
+        </div> 
+        
+        <div class="two">
+           “Every couple has differences,” continues Johnson. 
+		   “What makes couples unhappy is when they have an emotional disconnection and they can’t get a feeling of secure base or safe haven with this person.”
+		   She notes that criticism and rejection — often met with defensiveness and withdrawal — are 
+		   exceedingly distressing, and something that our brain interprets as a danger cue. To foster emotional responsiveness between partners, Johnson pioneered Emotionally Focused Therapy, in which couples learn to bond through having conversations that express needs and avoid criticism. “Couples have to learn how to talk about feelings in ways that brings the other person closer,” says Johnson.
+			
+        </div>
+
+    </div> 
+    <br><br><br><br><br><br><br><br><br><br>
+    <div class="left"><img src="../images/r5_2.jpg" width="500px" style="margin:0 20px;"></div>
+    <div class="center" style="text-align:justify; margin:0 50px;">
+        According to Carrie Cole, director of research for the Gottman Institute,
+		an organization dedicated to the research of marriage, emotional disengagement 
+		can easily happen in any relationship when couples are not doing things that create positivity.
+		“When that happens, people feel like they’re just moving further and further apart until they don’t even know each other anymore,”
+		says Cole. That focus on positivity is why the Gottman Institute has embraced the motto “small things often.” 
+		The Gottman Lab has been studying relationship satisfaction since the 1970s, and that research drives the Institute’s psychologists to encourage couples to engage in small, routine points of contact that demonstrate appreciation.
+    </div>
+    <br><br><br>
+    </div>
+    <script>
+		let nav = document.querySelector('nav');
+		let dropdown = nav.querySelector('.dropdown');
+		let dropdownToggle = nav.querySelector("[data-action='dropdown-toggle']");
+		let navToggle = nav.querySelector("[data-action='nav-toggle']");
+  
+		dropdownToggle.addEventListener('click', () => {
+		  if (dropdown.classList.contains('show')) {
+			dropdown.classList.remove('show');
+		  } else {
+			dropdown.classList.add('show');
+		  }
+		})
+  
+		navToggle.addEventListener('click', () => {
+		  if (nav.classList.contains('opened')) {
+			nav.classList.remove('opened');
+		  } else {
+			nav.classList.add('opened');
+		  }
+		})
+	  </script>
+</body>
+</html>
+
