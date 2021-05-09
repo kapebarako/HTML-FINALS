@@ -1,0 +1,142 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Montserrat&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>FinerMinds</title>
+    <style type= "text/css">
+    .container {
+        width: 90%;
+        height: 100px;
+        margin: auto;
+        padding: 10px;
+        top:-100px;
+    }
+
+    .one {
+        width: 30%;
+        height: 250px;
+        float: left;
+        margin: 0 35px 30px 0;
+    }
+
+    .two {
+        margin-left: 15%;
+        height: 150px;
+        margin: 0 30px 70px 0;
+    }
+
+    b{
+        color: #fdc819;
+    }
+
+    </style>
+</head>
+
+<body>
+    <link rel="stylesheet" type="text/css" href="fm_landing_css.css">   
+    <div id="wrap">
+        <nav>
+          <div>
+            <img class="logo" src="images/logo.png"/>
+          </div>
+          <button type="button" class="btn-hamburger" data-action="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html">Home</a></li>
+            <li class="nav-item dropdown">
+              <a href="#" data-action="dropdown-toggle">About</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="aboutheblog.html">the Blog</a>
+                <a class="dropdown-item" href="AboutUs.html">the Team</a>
+              </div>
+            </li>
+            <li class="nav-item active"><a href="articles.html">Self improvement articles</a></li>
+            <li class="nav-item"><a href="selfhelpbooks.html">Self help books</a></li>
+            <li class="nav-item"><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+    <br><br><br>
+
+    <hr class="line3">
+    <h1 style="text-align: left; margin-left:30px;">How isolation affects memory and thinking skills</h1>
+    <h5 style="text-indent: 30px;">Dr. Salinas<b> || </b> May, 2021</h5>
+    <hr class="line3">
+    <br>
+    <div class="right"><img src="images/mh5.jpg" width="500px" style="margin:0 20px;"></div>
+    <div class="center" style="text-align:justify; margin:0 50px;">
+        <h4>We've all been isolated from many family members and friends during the pandemic. If you've been having a harder time remembering things or processing information since the pandemic began, it could be an isolation side effect.</h4>
+             "It's something I'm seeing clinically. Some people were okay before the pandemic and now they're having faster cognitive decline," says Dr. Joel Salinas, a behavioral neurologist and faculty member of the Harvard Center for Population and Development Studies.
+	Dr. Salinas says we don't have a lot of evidence yet to back up a clear association between 
+	pandemic lockdowns and a change in memory or thinking skills. One small 2020 study found
+	that 60% of people with mild cognitive impairment or Alzheimer's disease experienced 
+	worsening cognition and delirium during the lockdown.
+    </div>
+
+    <div class="container">
+
+        <div class="one">
+            <hr class="line2">
+                <h1>"</h1><h5>It is an absolute human certainty that no one can know his own
+				beauty or perceive a sense of his own worth until it has been reflected 
+				back to him in the mirror of another loving, caring human being.</h5><h1>"</h1>
+            <hr class="line2">
+        </div>
+
+        <div class="two" style="text-align:justify;">
+        Isolation (being cut off from social contact) was a problem for older adults long
+		before the pandemic began. Life circumstances — such as living far from 
+		friends and family, losing a partner, or being unable to drive — often 
+		create unanticipated situations in which we find ourselves isolated. 
+		That sometimes puts health in jeopardy. "In studies of people, isolation is associated with an increased risk for dementia, although it's unclear how high the risk is," Dr. Salinas says. 
+		"In lab animals, isolation has been shown to cause 
+		brain shrinkage and the kind of brain changes you'd see 
+		in Alzheimer's disease — reduced brain cell connections and reduced 
+		levels of brain-derived neurotrophic factor, which is important for the 
+		formation, connection, and repair of brain cells."
+        </div> 
+
+    </div> 
+    <br><br><br><br><br><br><br><br>
+    <div class="left"><img src="images/mh5_1.jpg" width="500px" style="margin:0 20px;"></div>
+    <div class="center" style="text-align:justify; margin:0 50px;">
+        If you feel that cognitive change you're experiencing may be the result of isolation, try to reach out to others. That can be challenging during the pandemic, but several options can help.
+Use video or social apps. They enable you to see and chat with friends or meet people who share your interests in an online class or club.
+"If you're unfamiliar with the technology, take it upon yourself to find someone who can teach you," Dr. Salinas advises.
+Pick up the phone. Reconnect with old friends. "Research suggests that phone calls can be as helpful as having a virtual exchange or meeting in person," Dr. Salinas says.
+    </div>
+    <br><br><br>
+    </div>
+    <script>
+		let nav = document.querySelector('nav');
+		let dropdown = nav.querySelector('.dropdown');
+		let dropdownToggle = nav.querySelector("[data-action='dropdown-toggle']");
+		let navToggle = nav.querySelector("[data-action='nav-toggle']");
+  
+		dropdownToggle.addEventListener('click', () => {
+		  if (dropdown.classList.contains('show')) {
+			dropdown.classList.remove('show');
+		  } else {
+			dropdown.classList.add('show');
+		  }
+		})
+  
+		navToggle.addEventListener('click', () => {
+		  if (nav.classList.contains('opened')) {
+			nav.classList.remove('opened');
+		  } else {
+			nav.classList.add('opened');
+		  }
+		})
+	  </script>
+</body>
+</html>
+
