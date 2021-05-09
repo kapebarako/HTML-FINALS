@@ -420,6 +420,35 @@ nav.opened .btn-hamburger span:nth-child(3) {
     background-image: var(--card-img-hovered-overlay), url(images/r2.png);
   }
 
+  .card-19 .card-img,
+  .card-19 .card-img-hovered {
+    background-image: var(--card-img-hovered-overlay), url(https://source.unsplash.com/zAi2Is48-MA);
+  }
+
+  .card-20 .card-img,
+  .card-20 .card-img-hovered {
+    background-image: var(--card-img-hovered-overlay), url(https://source.unsplash.com/zAi2Is48-MA);
+  }
+
+  .card-21 .card-img,
+  .card-21 .card-img-hovered {
+    background-image: var(--card-img-hovered-overlay), url(https://source.unsplash.com/zAi2Is48-MA);
+  }
+
+  .card-22 .card-img,
+  .card-22 .card-img-hovered {
+    background-image: var(--card-img-hovered-overlay), url(https://source.unsplash.com/zAi2Is48-MA);
+  }
+
+  .card-23 .card-img,
+  .card-23 .card-img-hovered {
+    background-image: var(--card-img-hovered-overlay), url(https://source.unsplash.com/zAi2Is48-MA);
+  }
+
+  .card-24 .card-img,
+  .card-24 .card-img-hovered {
+    background-image: var(--card-img-hovered-overlay), url(https://source.unsplash.com/zAi2Is48-MA);
+  }
 
   .header-banner {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/articles.jpg");
