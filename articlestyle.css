@@ -332,47 +332,47 @@ nav.opened .btn-hamburger span:nth-child(3) {
   
   .card-1 .card-img,
   .card-1 .card-img-hovered {
-    background-image: var(--card-img-hovered-overlay), url(images/mh1.jpeg);
+    background-image: var(--card-img-hovered-overlay), url(Articles/IMAGES/MH/mh1.jpeg);
   }
   
   .card-2 .card-img,
   .card-2 .card-img-hovered {
-    background-image: var(--card-img-hovered-overlay), url(images/mh2.jpg);
+    background-image: var(--card-img-hovered-overlay), url(Articles/IMAGES/MH/mh2.jpg);
   }
   
   .card-3 .card-img,
   .card-3 .card-img-hovered {
-    background-image: var(--card-img-hovered-overlay), url(images/mh3.jpg);
+    background-image: var(--card-img-hovered-overlay), url(Articles/IMAGES/MH/mh3.jpg);
   }
   
   .card-4 .card-img,
   .card-4 .card-img-hovered {
-    background-image: var(--card-img-hovered-overlay), url(images/mh4.jpg);
+    background-image: var(--card-img-hovered-overlay), url(Articles/IMAGES/MH/mh4.jpg);
   }
 
   .card-5 .card-img,
   .card-5 .card-img-hovered {
-    background-image: var(--card-img-hovered-overlay), url(images/mh5.jpg);
+    background-image: var(--card-img-hovered-overlay), url(Articles/IMAGES/MH/mh5.jpg);
   }
 
   .card-6 .card-img,
   .card-6 .card-img-hovered {
-    background-image: var(--card-img-hovered-overlay), url(images/mh6_1.jpg);
+    background-image: var(--card-img-hovered-overlay), url(Articles/IMAGES/MH/mh6_1.jpg);
   }
 
   .card-7 .card-img,
   .card-7 .card-img-hovered {
-    background-image: var(--card-img-hovered-overlay), url(images/mh7_1.jpg);
+    background-image: var(--card-img-hovered-overlay), url(Articles/IMAGES/MH/mh7_1.jpg);
   }
 
   .card-8 .card-img,
   .card-8 .card-img-hovered {
-    background-image: var(--card-img-hovered-overlay), url(images/mh8_1.png);
+    background-image: var(--card-img-hovered-overlay), url(Articles/IMAGES/MH/mh8_1.png);
   }
 
   .card-9 .card-img,
   .card-9 .card-img-hovered {
-    background-image: var(--card-img-hovered-overlay), url(./Articles/IMAGES/SA/sa1.jpg);
+    background-image: var(--card-img-hovered-overlay), url(Articles/IMAGES/SA/sa1.jpg);
   }
 
   .card-10 .card-img,
@@ -412,42 +412,42 @@ nav.opened .btn-hamburger span:nth-child(3) {
 
   .card-17 .card-img,
   .card-17 .card-img-hovered {
-    background-image: var(--card-img-hovered-overlay), url(images/r1.png);
+    background-image: var(--card-img-hovered-overlay), url(Articles/IMAGES/R/r1.png);
   }
 
   .card-18 .card-img,
   .card-18 .card-img-hovered {
-    background-image: var(--card-img-hovered-overlay), url(images/r2.png);
+    background-image: var(--card-img-hovered-overlay), url(Articles/IMAGES/R/r2.png);
   }
 
   .card-19 .card-img,
   .card-19 .card-img-hovered {
-    background-image: var(--card-img-hovered-overlay), url(images/r3_1.png);
+    background-image: var(--card-img-hovered-overlay), url(Articles/IMAGES/R/r3_1.png);
   }
 
   .card-20 .card-img,
   .card-20 .card-img-hovered {
-    background-image: var(--card-img-hovered-overlay), url(images/r4_1.jpg);
+    background-image: var(--card-img-hovered-overlay), url(Articles/IMAGES/R/r4_1.jpg);
   }
 
   .card-21 .card-img,
   .card-21 .card-img-hovered {
-    background-image: var(--card-img-hovered-overlay), url(images/r5_1.jpg);
+    background-image: var(--card-img-hovered-overlay), url(Articles/IMAGES/R/r5_1.jpg);
   }
 
   .card-22 .card-img,
   .card-22 .card-img-hovered {
-    background-image: var(--card-img-hovered-overlay), url(images/r6.jpg);
+    background-image: var(--card-img-hovered-overlay), url(Articles/IMAGES/R/r6.jpg);
   }
 
   .card-23 .card-img,
   .card-23 .card-img-hovered {
-    background-image: var(--card-img-hovered-overlay), url(images/r7.jpg);
+    background-image: var(--card-img-hovered-overlay), url(Articles/IMAGES/R/r7.jpg);
   }
 
   .card-24 .card-img,
   .card-24 .card-img-hovered {
-    background-image: var(--card-img-hovered-overlay), url(images/r8.jpg);
+    background-image: var(--card-img-hovered-overlay), url(Articles/IMAGES/R/r8.jpg);
   }
 
   .header-banner {
