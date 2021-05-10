@@ -21,6 +21,9 @@ h2{
     font-size:50px;
     color:#358fd8;
 }
+h5{
+	font-weight: bold;
+}
 cite{
     display: block;
     text-align: right;
