@@ -372,7 +372,7 @@ nav.opened .btn-hamburger span:nth-child(3) {
 
   .card-9 .card-img,
   .card-9 .card-img-hovered {
-    background-image: var(--card-img-hovered-overlay), url(images/sa1.jpg);
+    background-image: var(--card-img-hovered-overlay), url(./Articles/IMAGES/SA/sa1.jpg);
   }
 
   .card-10 .card-img,
