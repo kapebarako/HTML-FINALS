@@ -357,17 +357,17 @@ nav.opened .btn-hamburger span:nth-child(3) {
 
   .card-6 .card-img,
   .card-6 .card-img-hovered {
-    background-image: var(--card-img-hovered-overlay), url(https://source.unsplash.com/zAi2Is48-MA);
+    background-image: var(--card-img-hovered-overlay), url(images/mh6_1.jpg);
   }
 
   .card-7 .card-img,
   .card-7 .card-img-hovered {
-    background-image: var(--card-img-hovered-overlay), url(https://source.unsplash.com/zAi2Is48-MA);
+    background-image: var(--card-img-hovered-overlay), url(images/mh7_1.jpg);
   }
 
   .card-8 .card-img,
   .card-8 .card-img-hovered {
-    background-image: var(--card-img-hovered-overlay), url(https://source.unsplash.com/zAi2Is48-MA);
+    background-image: var(--card-img-hovered-overlay), url(images/mh8_1.png);
   }
 
   .card-9 .card-img,
@@ -437,17 +437,17 @@ nav.opened .btn-hamburger span:nth-child(3) {
 
   .card-22 .card-img,
   .card-22 .card-img-hovered {
-    background-image: var(--card-img-hovered-overlay), url(https://source.unsplash.com/zAi2Is48-MA);
+    background-image: var(--card-img-hovered-overlay), url(images/r6.jpg);
   }
 
   .card-23 .card-img,
   .card-23 .card-img-hovered {
-    background-image: var(--card-img-hovered-overlay), url(https://source.unsplash.com/zAi2Is48-MA);
+    background-image: var(--card-img-hovered-overlay), url(images/r7.jpg);
   }
 
   .card-24 .card-img,
   .card-24 .card-img-hovered {
-    background-image: var(--card-img-hovered-overlay), url(https://source.unsplash.com/zAi2Is48-MA);
+    background-image: var(--card-img-hovered-overlay), url(images/r8.jpg);
   }
 
   .header-banner {
