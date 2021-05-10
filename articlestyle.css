@@ -377,12 +377,12 @@ nav.opened .btn-hamburger span:nth-child(3) {
 
   .card-10 .card-img,
   .card-10 .card-img-hovered {
-    background-image: var(--card-img-hovered-overlay), url(https://source.unsplash.com/zAi2Is48-MA);
+    background-image: var(--card-img-hovered-overlay), url(Articles/IMAGES/SA/sa2.jpg);
   }
 
   .card-11 .card-img,
   .card-11 .card-img-hovered {
-    background-image: var(--card-img-hovered-overlay), url(https://source.unsplash.com/zAi2Is48-MA);
+    background-image: var(--card-img-hovered-overlay), url(Articles/IMAGES/SA/sa3.jpg);
   }
 
   .card-12 .card-img,
