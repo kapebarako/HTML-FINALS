@@ -422,17 +422,17 @@ nav.opened .btn-hamburger span:nth-child(3) {
 
   .card-19 .card-img,
   .card-19 .card-img-hovered {
-    background-image: var(--card-img-hovered-overlay), url(https://source.unsplash.com/zAi2Is48-MA);
+    background-image: var(--card-img-hovered-overlay), url(images/r3_1.png);
   }
 
   .card-20 .card-img,
   .card-20 .card-img-hovered {
-    background-image: var(--card-img-hovered-overlay), url(https://source.unsplash.com/zAi2Is48-MA);
+    background-image: var(--card-img-hovered-overlay), url(images/r4_1.jpg);
   }
 
   .card-21 .card-img,
   .card-21 .card-img-hovered {
-    background-image: var(--card-img-hovered-overlay), url(https://source.unsplash.com/zAi2Is48-MA);
+    background-image: var(--card-img-hovered-overlay), url(images/r5_1.jpg);
   }
 
   .card-22 .card-img,
