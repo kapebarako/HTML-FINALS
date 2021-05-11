@@ -1,107 +1,417 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Montserrat&family=Roboto:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Montserrat&family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>FinerMinds</title>
-    <style type= "text/css">
-    .container {
-        width: 90%;
-        height: 100px;
-        margin: auto;
-        padding: 10px;
-        top:-100px;
-    }
+  <link rel="stylesheet" media="all" href="../../design.css">
+  <title>Book Review</title>
 
-    .one {
-        width: 30%;
-        height: 550px;
-        float: left;
-        margin: 0 35px 30px 0;
-    }
-
-    .two {
-        margin-left: 15%;
-        width:60%;
-        height: 560px;
-        margin: 0 30px 70px 0;
-        float:right;
-    }
-
-    b{
+  <style type= "text/css">
+	.header-banner {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/selfdev.jpg");
+		height:400px;
+		text-align: center;
+		color: white;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	body{
+		font-family: 'Montserrat';
+		line-height: 30px;
+		text-align: justify;
+		margin: 0;
+		color:#0c185a;
+	}
+	p{
+		font-family: 'Roboto';
+		font-size: large;
+		color:#0c185a;
+	}
+	p.bold{
+		margin-top:10px;
+	}
+	h1{
+		text-align: center;
+		font-size:50px;
+		color:#fdc819;
+		font-weight: bolder;
+		font-family: 'Montserrat';
+	}
+	h2{
+		color:#358fd8;
+		font-size: 32px;
+		font-family: 'Roboto';
+	}
+	h2, a {
+		color:#358fd8;
+		font-size:18px;
+		font-family: 'Roboto';
+	}
+	h2.title{
+		line-height:14px;
+		text-align:center;
+	}
+	h2.title-right{
+		font-size:20px;
+		color:#fdc819;
+	}
+	b{
         color: #fdc819;
     }
+	div.article-body{
+		text-align:justify;
+	}
+	div.button-row{
+		border:0;
+	}
+	hr.line{
+		margin:auto;
+		border: 3px solid #87a7ce;
+		width: 90%;
+	}
+	hr.line2{
+		border: 2px solid #f7cc10;
+		width: 100%;
+	}
+	hr.line3{
+		border: 2px solid #34588d;
+		width: 100%;
+	}
 
-    </style>
+	a.button{
+		border:0;
+		font-family: 'DM Sans';
+		font-weight: bold;
+		font-size: large;
+		color:#0c185a;
+		background-color:#ffc70f;
+		text-decoration: none;
+		padding: 1em 1.5em;
+		cursor: default;
+	}
+
+	a.button:hover{
+		background-color: #e9b715;
+		color: #1b2a7e;
+		border:none;
+	}
+	.container {
+		position: relative;
+		z-index: 1;
+		margin-top: 70px;
+		padding: 5%;
+		min-height: 100%;
+	}
+	.container p {
+		font-family: 'Montserrat', sans-serif;
+		font-size: 1.2em;
+	}
+	.article-body{
+		position: relative;
+		z-index: 1;
+		padding: 0 5% 5% 5%;
+		min-height: 100%;
+		color:black;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 1.2em;
+		color:#0c185a;
+	}
+	.author{
+		font-size:14px;
+	}
+	.sitemap{
+		text-decoration:none;
+	}
+	#title{
+		color:#fdc819;
+	}
+  </style>
 </head>
-
 <body>
-    <link rel="stylesheet" type="text/css" href="../../fm_landing_css.css">   
+  <link rel="stylesheet" type="text/css" href="../../fm_landing_css.css">   
     <div id="wrap">
-        <nav>
-          <div>
-            <img class="logo" src="../../images/logo.png"/>
+      <nav>
+        <div>
+          <img class="logo" src="../../images/logo.png"/>
+        </div>
+        <button type="button" class="btn-hamburger" data-action="nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="../../index.html">Home</a></li>
+          <li class="nav-item dropdown">
+            <a href="#" data-action="dropdown-toggle">About</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="../../aboutheblog.html">the Blog</a>
+              <a class="dropdown-item" href="../../AboutUs.html">the Team</a>
+            </div>
+          </li>
+          <li class="nav-item"><a href="../../articles.html">Self improvement articles</a></li>
+          <li class="nav-item active"><a href="selfhelpbooks.html">Self help books</a></li>
+          <li class="nav-item"><a href="../../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+  <br><br>
+
+  <script>
+  let nav = document.querySelector('nav');
+  let dropdown = nav.querySelector('.dropdown');
+  let dropdownToggle = nav.querySelector("[data-action='dropdown-toggle']");
+  let navToggle = nav.querySelector("[data-action='nav-toggle']");
+
+  dropdownToggle.addEventListener('click', () => {
+    if (dropdown.classList.contains('show')) {
+      dropdown.classList.remove('show');
+    } else {
+      dropdown.classList.add('show');
+    }
+  })
+
+  navToggle.addEventListener('click', () => {
+    if (nav.classList.contains('opened')) {
+      nav.classList.remove('opened');
+    } else {
+      nav.classList.add('opened');
+    }
+  })
+</script>
+
+
+  <div class="hero-text">
+          <div class="page-content">
+          <div class="row-fluid book-details-hero">
+          <div class="span1 book-cover"></div>
+          <div class="span5 book-cover">
+          <img alt="atomic habits.jpg" src="../books images/erlan/atomic habits.jpg">
           </div>
-          <button type="button" class="btn-hamburger" data-action="nav-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-          <ul class="nav-menu">
-            <li class="nav-item"><a href="index.html">Home</a></li>
-            <li class="nav-item dropdown">
-              <a href="#" data-action="dropdown-toggle">About</a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="../../aboutheblog.html">the Blog</a>
-                <a class="dropdown-item" href="../../AboutUs.html">the Team</a>
-              </div>
-            </li>
-            <li class="nav-item active"><a href="../../articles.html">Self improvement articles</a></li>
-            <li class="nav-item"><a href="../../selfhelpbooks.html">Self-help books</a></li>
-            <li class="nav-item"><a href="../../contact.html">Contact</a></li>
-          </ul>
-        </nav>
-    <br><br>
+          <div class="span4 book-data">
+          <p class="sans bold uppercase">Book reviews</p>
+          <hr class="line">
+          <h1>
+          Atomic Habits
+          </h1>
+          <hr class="line">
+          <p></p>
+          <p> 
+          Review by
+          <a href="https://kapebarako.github.io/HTML-FINALS/Erlan/BINASAHAN_LANDINGPAGE_CSAD.html" style="color:#358fd8">
+		  <strong>Binasahan Erlan klaud G.</strong></a>
+          </p>
+          <p>
+          May 07, 2021
+          </p>
 
-    <div class="container">
 
-        <div class="one">
-            <img src="../../Self help books/books images/erlan/atomic habits.jpg" width="300px" style="margin:10px;">
-        </div>
+<!-- AddThis Button END -->
 
-        <div class="two" style="text-align:justify;">
-            <hr class="line2">
-            <h2 style="font-size: 32px;">Atomic Habits</h2>
-            <p>by James Clear</p>
-            <hr class="line2">
-            <br>
-            No matter your goals, Atomic Habits offers a proven framework for 
-			improving--every day. James Clear, one of the world's leading experts on habit formation, 
-			reveals practical strategies that will teach you exactly how to form good habits, 
-			break bad ones, and master the tiny behaviors that lead to remarkable results.
-			The issue isn't with you if you're having trouble changing your habits. 
-			Your system is the issue. Bad patterns replicate themselves not because you 
-			don't want to change, but because you're using the wrong change mechanism.
-			<br><br>
-            
-			
-			Clear is known for distilling complicated concepts into straightforward 
-			habits that can be adapted to everyday life and work. He uses the most 
-			well-established theories from genetics, psychology, and neuroscience to 
-			construct an accessible guide to make good habits inevitable and poor habits impossible.
-			Readers will learn a lot along the way. If you're a team trying to win a championship,
-			a company looking to redefine an industry, or a person looking to stop smoking, 
-			lose weight, minimize stress, or accomplish some other goal, Atomic Habits can 
-			reshape the way you think about change and achievement, and give you the resources 
-			and techniques you need to turn your habits.
-            <br><br><br>
-        </div>
-    </div> 
+</div>
+
+<div class="span1 book-data"></div>
+</div>
+<hr class="line2" style="width:90%;margin:auto;">
+
+<div class="row-fluid">
+<div class="span12">
+<div class="content-well article-show">
+<div class="container-fluid">
+<div class="row-fluid">
+<div class="span7">
+
+<div class="article-body">
+No matter your goals, Atomic Habits offers a proven framework for 
+improving--every day. James Clear, one of the world's leading experts on habit formation, 
+reveals practical strategies that will teach you exactly how to form good habits, 
+break bad ones, and master the tiny behaviors that lead to remarkable results.
+The issue isn't with you if you're having trouble changing your habits. 
+Your system is the issue. Bad patterns replicate themselves not because you 
+don't want to change, but because you're using the wrong change mechanism.
+<br><br>
+Clear is known for distilling complicated concepts into straightforward 
+habits that can be adapted to everyday life and work. He uses the most 
+well-established theories from genetics, psychology, and neuroscience to 
+construct an accessible guide to make good habits inevitable and poor habits impossible.
+Readers will learn a lot along the way. If you're a team trying to win a championship,
+a company looking to redefine an industry, or a person looking to stop smoking, 
+lose weight, minimize stress, or accomplish some other goal, Atomic Habits can 
+reshape the way you think about change and achievement, and give you the resources 
+and techniques you need to turn your habits.
+<br><br>
+
+
+</div>
+</div>
+<div class="span4">
+<div class="book-details">
+<div class="book-cover">
+<img alt="Atomic Habits.jpg" src="../books images/erlan/atomic habits.jpg">
+</div>
+<div class="book-data">
+<h2 class="title-right" class="italic">
+<i>Atomic Habits</i>
+</h2>
+<p class="sans bold">
+By
+<a class href="https://www.amazon.com/James-Clear/e/B07DJTJC3X?ref_=dbs_p_ebk_r00_abau_000000">James Clear</a>
+</p>
+<p>
+Page Street
+<br>
+$12.99
+<br>
+ISBN
+9781645672081
+<br>
+Published
+05/5/2021
+</p>
+<p class="genre-links">
+/
+<a>YA Fiction</a>
+/ 
+</p>
+</div>
+<div class="affiliate-links-small">
+</div>
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid button-row">
+
+</div>
+<div class="row-fluid">
+<h4 class="heading">Trending Book Reviews</h4>
+</div>
+<div class="row-fluid reviews-block">
+<div class="span12">
+<div class="content-well trending">
+<div class="hidden-phone">
+<div class="row-fluid">
+<div class="span4">
+<div class="bp-block article-info">
+<div class="article-list-left cover">
+<a href="#"><img alt="Why We Do What We Do image" src="../books images/mark/whywedowhatwedo.jpg"></a>
+</div>
+<div class="flex-article-content">
+<h2 class="italic title">
+<a id="title" href="#">Why We Do What We Do</a>
+<br>
+</h2>
+<p class="sans bold"> 
+By
+<a class="author" href="https://www.amazon.com/Edward-L.-Deci/e/B000APHXJ6%3Fref=dbs_a_mng_rwt_scns_share">Edward L. Deci</a>
+</p>
+<p>
+If you reward your children for doing their homework, they will usually respond by...
+</p>
+</div>
+<br clear="all">
+</div>
+
+</div>
+<div class="span4">
+<div class="bp-block article-info">
+<div class="article-list-left cover">
+<a href="#"><img alt="Atomic Habits book jacket image" src="../books images/erlan/7 Habits of Highly Effective People.jpg"></a>
+</div>
+<div class="flex-article-content">
+<h2 class="italic title">
+<a id="title" href="#">7 Habits of Highly Effective People</a>
+<br>
+</h2>
+<p class="sans bold">
+By
+<a class="author" href="https://www.amazon.com/Stephen-R.-Covey/e/B000AQ2VAQ?ref_=dbs_p_ebk_r00_abau_000000">Stephen R. Covey</a>
+</p>
+<p>
+His principle-centered approach for solving personal and professional problems gives..
+</p>
+</div>
+<br clear="all">
+</div>
+
+</div>
+<div class="span4">
+<div class="bp-block article-info">
+<div class="article-list-left cover">
+<a href="#"><img alt="7 Habits of Highly Effective People book jacket image" src="../books images/erlan/every thing is fck.jpg"></a>
+</div>
+<div class="flex-article-content">
+<h2 class="italic title">
+<a id="title" href="#"></span>Everything is f*cked</a>
+<br>
+</h2>
+<p class="sans bold">
+By
+<a class="author" href="https://www.amazon.com/Mark-Manson/e/B00BIJOMOC?ref_=dbs_p_ebk_r00_abau_000000">Mark Manson</a>
+</p>
+<p>
+Everything Is Fucked: A Book About Hope is the third book by blogger and author Mark Manson...
+</p>
+</div>
+<br clear="all">
+</div>
+
+</div>
+</div>
+<br>
+<div class="row-fluid button-row">
+<a class="button" href="https://kapebarako.github.io/HTML-FINALS/selfhelpbooks.html">All Book Reviews</a>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+<div class="container-fluid no-padding">
+<div class="footer row-fluid">
+<div class="dark-block span12">
+<footer>
+<div class="row-fluid brand">
+<div class="span3"></div>
+<div class="span6 middle">
+<img class="brand" src="../../images/logo.png" alt="Logo gray" width="156" height="36">
+</div>
+</div>
+<div class="row-fluid">
+</a></p>
+</div>
+<div class="row-fluid">
+<p class="sitemap">
+<a href="https://kapebarako.github.io/HTML-FINALS/aboutheblog.html">About FinerMinds
+</a>•
+<a href="https://kapebarako.github.io/HTML-FINALS/contact.html">Contact Us
+</a>
+</p>
+</div>
+<div class="row-fluid">
+<div class="social-block">
+<a href=""><i class="zmdi zmdi-facebook-box"></i></a>
+<a href=""><i class="zmdi zmdi-twitter-box"></i></a>
+<a href=""><i class="zmdi zmdi-instagram"></i></a>
+</div>
+</div>
+<div class="row-fluid copyright">
+<p>© 2021 FinerMinds , inc. | Metro Manila, Philippines, TN 37212</p>
+</div>
+</footer>
+</div>
+</div>
 
 </body>
 </html>
