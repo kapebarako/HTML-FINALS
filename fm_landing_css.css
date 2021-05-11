@@ -183,9 +183,9 @@ nav .dropdown-item {
 	display: block;
 	padding: 0 1em;
 	font-size: 18px;
-    font-weight: bolder;
+    font-weight: bolder !important;
 	color: #0c0b3d;
-	line-height: 3;
+	line-height: 3 !important;
 	text-decoration: none;
 }
 a.dropdown-item:hover{
