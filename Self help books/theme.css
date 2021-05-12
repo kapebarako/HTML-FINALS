@@ -274,9 +274,6 @@
         width: 100%;
     }
 }
-/* ------------------------------------------------------------ *\
-	Single Book
-\* ------------------------------------------------------------ */
 .single-books h2{
     font-size: 24px;
     font-weight: bold;
@@ -375,3 +372,4 @@
 #popular-books{
     padding: 75px 0;
     background-color: #f2f2f2;
+}
