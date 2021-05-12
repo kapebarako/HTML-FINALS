@@ -449,6 +449,18 @@ nav.opened .btn-hamburger span:nth-child(3) {
   .card-24 .card-img-hovered {
     background-image: var(--card-img-hovered-overlay), url(Articles/IMAGES/R/r8.jpg);
   }
+  .card-25 .card-img,
+  .card-25 .card-img-hovered {
+    background-image: var(--card-img-hovered-overlay), url(Articles/IMAGES/R/r8.jpg);
+  }
+  .card-26 .card-img,
+  .card-26 .card-img-hovered {
+    background-image: var(--card-img-hovered-overlay), url(Articles/IMAGES/R/r8.jpg);
+  }
+  .card-27 .card-img,
+  .card-27 .card-img-hovered {
+    background-image: var(--card-img-hovered-overlay), url(Articles/IMAGES/R/r8.jpg);
+  }
 
   .header-banner {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/articles.jpg");
