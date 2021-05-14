@@ -271,3 +271,12 @@ nav.opened .btn-hamburger span:nth-child(3) {
 .btn:hover{
 	color:#ffc70f;
 }
+
+.tag{
+	color:#1288e9;
+}
+.tag:hover{
+	cursor: default;
+	text-decoration: none;
+	color:#1288e9;
+}
